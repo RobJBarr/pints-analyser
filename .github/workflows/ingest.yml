@@ -1,0 +1,39 @@
+name: WhatsApp ingest
+
+on:
+  repository_dispatch:
+    types: [whatsapp_event]
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Run processor
+        env:
+          GITHUB_EVENT_PATH: ${{ github.event_path }}
+        run: node scripts/process_messages.js
+
+      - name: Commit results
+        run: |
+          git config user.name "pints-bot"
+          git config user.email "pints-bot@users.noreply.github.com"
+          git add pints.json messages.json || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update pints data [skip ci]\n\nCo-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+            git push
+          fi
