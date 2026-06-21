@@ -6,6 +6,11 @@ const qrcodeTerminal = require('qrcode-terminal');
 const express = require('express');
 const { exec } = require('child_process');
 
+// Logging utility with timestamps
+function log(msg) { console.log(`[${new Date().toISOString()}] ${msg}`); }
+function logError(msg) { console.error(`[${new Date().toISOString()}] ERROR: ${msg}`); }
+function logWarn(msg) { console.warn(`[${new Date().toISOString()}] WARN: ${msg}`); }
+
 const ROOT = process.cwd();
 const MESSAGES_PATH = path.join(ROOT, 'messages.json');
 const PINTS_PATH = path.join(ROOT, 'pints.json');
@@ -18,34 +23,70 @@ function safeWrite(p,obj){ fs.writeFileSync(p,JSON.stringify(obj,null,2),'utf8')
 // Utilities
 function extractNumberFromText(s){ if (!s) return null; const m = s.match(/(\d+)/); return m? parseInt(m[1],10):null; }
 function hasPlaneEmoji(text){ if(!text) return false; return /✈|\u2708/.test(text); }
+function markHattricks(events) {
+  let streakSender = null;
+  let streakCount = 0;
 
+  return events.map(event => {
+    const sender = event.sender;
+
+    if (sender === streakSender) {
+      streakCount++;
+    } else {
+      streakSender = sender;
+      streakCount = 1;
+    }
+
+    if (streakCount === 3) {
+      streakCount = 0;       // reset so the next hattrick needs 3 fresh consecutive events
+      streakSender = null;   // force a restart even if the same sender keeps posting
+      return { ...event, hattrick: true };
+    }
+
+    return { ...event, hattrick: false };
+  });
+}
 function computeTotals(messages){
-  const events = [];
+  log(`[COMPUTE] Starting to compute totals from ${messages.length} messages`);
+  // Simple count: just tally image messages per sender (no multipliers, no rules)
   const totals = {};
-  const consumed = new Set();
-
+  let events = [];
+  const hatties = {};
+  let imageCount = 0;
   for (let i=0;i<messages.length;i++){
     const m = messages[i];
-    if (consumed.has(m.id)) continue;
     if (m.type !== 'image') continue;
+    if (m.is_gif) continue; 
     if (m.cancelled) continue;
-    let n = extractNumberFromText(m.text || m.caption);
-    if (n === null) n = 1;
-    let multiplier = 1;
-    if (hasPlaneEmoji(m.text || m.caption)) multiplier *= 2;
-    events.push({id:m.id, ts:m.ts, sender:m.sender, base:n, multiplier});
+    
+    // Resolve sender ID to name using cache, fallback to ID
+    const senderId = m.sender || 'unknown';
+    const senderName = contactNameCache[senderId] || senderId;
+    events.push({ id: m.id, ts: m.ts, sender: senderName, count: 1, reactions: m.reactions, message: m.text});
+  }
+  log(`[COMPUTE] Found ${events.length} image events, now checking for hattricks and away goals`);
+  events = markHattricks(events);
+  for (const event of events) {
+    const senderName = event.sender;
+    imageCount++;
+    totals[senderName] = (totals[senderName]||0) + 1;
+    if (event.hattrick) {
+      imageCount++;
+      hatties[senderName] = (hatties[senderName]||0) + 1;
+      totals[senderName] = (totals[senderName]||0) + 1;
+    }
+    if (event.away_goal) {
+      imageCount++;
+      totals[senderName] = (totals[senderName]||0) + 1;
+    }
   }
 
-  const consec = {};
-  for (let i=0;i<events.length;i++){
-    const e = events[i];
-    consec[e.sender] = (consec[e.sender]||0) + 1;
-    for (const s of Object.keys(consec)) if (s !== e.sender) consec[s] = 0;
-    if (consec[e.sender] === 3){ e.multiplier *= 2; consec[e.sender] = 0; }
+  log(`[COMPUTE] Found ${imageCount} submissions from ${Object.keys(totals).length} senders, including ${Object.values(hatties).reduce((a,b)=>a+b, 0)} hattricks`);
+  for (const [sender, count] of Object.entries(totals)) {
+    log(`[COMPUTE]   ${sender}: ${count} images, hattricks: ${hatties[sender] || 0}`);
   }
 
-  for (const e of events){ const count = e.base * e.multiplier; totals[e.sender] = (totals[e.sender]||0) + count; }
-  return {events, totals};
+  return {events, totals, hatties};
 }
 
 function dedupeAndMerge(existingMessages, incoming){
@@ -62,153 +103,352 @@ function gitCommitPush(message, files){
   const filesArg = (files && files.length)? files.join(' '): 'pints.json messages.json';
   const cmd = `git add ${filesArg} && (git diff --staged --quiet || (git commit -m "${message}" && git push))`;
   exec(cmd, { cwd: ROOT }, (err, stdout, stderr) => {
-    if (err) console.error('git push error:', err.message);
-    else console.log('git commit/push done');
+    if (err) logError('git push error:', err.message);
+    else log('git commit/push done');
   });
 }
 
 // State
 let lastQrDataUrl = null;
 let lastQrString = null;
-const pendingImages = new Map(); // sender -> {msgObj, created}
+let contactNameCache = {}; // ID -> name mapping
 
 // Create client with local auth for persistence
+const CLIENT_ID = process.env.CLIENT_ID || 'pints-listener';
 const client = new Client({
-  authStrategy: new LocalAuth({ clientId: 'pints-listener' }),
+  authStrategy: new LocalAuth({ clientId: CLIENT_ID }),
   puppeteer: {
     headless: true,
+    executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || undefined,
     args: ['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage']
   }
 });
 
 client.on('qr', async (qr) => {
+  log('[CLIENT] QR code received');
   lastQrString = qr;
+  log('[CLIENT] Displaying QR Code:');
   qrcodeTerminal.generate(qr, {small:true});
-  try { lastQrDataUrl = await qrcode.toDataURL(qr); } catch(e){ lastQrDataUrl = null; }
-  console.log('QR received — scan with WhatsApp');
+  try { lastQrDataUrl = await qrcode.toDataURL(qr); log('[CLIENT] QR Data URL generated'); } catch(e){ lastQrDataUrl = null; logError('[CLIENT] Failed to generate QR data URL'); }
+  log('[CLIENT] Scan the QR code with WhatsApp to authenticate');
 });
 
-client.on('ready', () => { console.log('WhatsApp client ready'); lastQrDataUrl = null; lastQrString = null; });
+client.on('ready', async () => {
+  log('[CLIENT] ✓ WhatsApp client ready and authenticated');
 
-client.on('auth_failure', msg => { console.error('Auth failure', msg); });
+  lastQrDataUrl = null;
+  lastQrString = null;
+  // Optional auto-scan on ready if environment variable set
+  try {
+    const auto = String(process.env.SCAN_PREFIX_ON_READY || '').toLowerCase();
+    const scanSelf = String(process.env.SCAN_SELF || '').toLowerCase();
+    log(`[CLIENT] Performing initial scan`);
+    const prefix = process.env.SCAN_PREFIX || '1500 PINTS';
+    log(`[CLIENT] Auto-scan starting (prefix='${prefix}')`);
+    try {
+      log(`[CLIENT] Fetching all chats...`);
+      const chats = await client.getChats();
+      log(`[CLIENT] Got ${chats.length} chats, filtering by prefix...`);
+      const matches = chats.filter(c => ((c.name || c.formattedTitle || '')).startsWith(prefix));
+      if (matches.length === 0) {
+        logWarn('[CLIENT] Auto-scan: no matching chats found');
+      } else {
+        log(`[CLIENT] Found ${matches.length} matching chats`);
+        // choose most-recently active match if available
+        let best = matches[0];
+        for (const c of matches) {
+          const a = c.lastMessage && c.lastMessage.timestamp ? Number(c.lastMessage.timestamp) : 0;
+          const b = best.lastMessage && best.lastMessage.timestamp ? Number(best.lastMessage.timestamp) : 0;
+          if (a > b) best = c;
+        }
+        log(`[CLIENT] Selected chat: ${best.name || best.formattedTitle || best.id}`);
+        const msgs = await fetchAllMessagesFromChat(best);
+        await persistFullAndRecompute(msgs);
+        log(`[CLIENT] ✓ Auto-scan completed for ${best.name || best.formattedTitle || best.id}`);
+      }
+    } catch (e) { console.log(e); logError('Error during auto-scan', e && e.stack || e);  }
+  } catch (e) { logError('Error while processing auto-scan setting', e && e.stack || e); }
+});
 
-// Helper to persist message and recompute totals
-function persistIncomingAndRecompute(incomingList){
-  const existing = safeRead(MESSAGES_PATH) || {messages:[]};
-  const { merged, added } = dedupeAndMerge(existing.messages, incomingList);
-  if (added > 0) console.log(`Added ${added} messages`);
-  safeWrite(MESSAGES_PATH, {messages: merged});
-  const { events, totals } = computeTotals(merged);
-  const out = { updated_at: new Date().toISOString(), totals, events };
-  safeWrite(PINTS_PATH, out);
-  gitCommitPush('Update pints data [auto]', ['pints.json','messages.json']);
+client.on('auth_failure', msg => { logError('Auth failure', msg); });
+
+// Fetch entire chat history and normalize messages
+async function fetchAllMessagesFromChat(chat){
+  log(`[FETCH] Starting fetch from chat: ${chat.name || chat.formattedTitle || chat.id}`);
+  const batch = 200;
+  let batchCount = 0;
+  let all = []
+  try{
+   all = await chat.fetchMessages({ limit: 1000000 });
+  //  all.map(m => {
+  //   const id = m.id && (m.id._serialized || m.id) || `msg-${m.timestamp || Date.now()}`;
+  //   const ts = m.timestamp || Date.now();
+  //   // Use author if available (group chats), fallback to from
+  //   const sender = m.author || m.from || 'unknown';
+  //   const type = (m.hasMedia || m.type === 'image') ? 'image' : (m.type || 'text');
+  //   const text = m.caption || m.body || '';
+  //   const reactions = m.getReactions() || [];
+  //   const cancelled = false;
+  //   return { id, ts, sender, type, text, reactions, cancelled, chatId: (chat.id && chat.id._serialized) || chat.id || null, chatName: chat.name || chat.formattedTitle || null };
+  //  });
+  //  while (true){
+  //    const options = lastId ? { limit: batch, before: lastId } : { limit: batch };
+  //    log(`[FETCH] Fetching batch ${++batchCount} (${batch} messages)`);
+  //    // fetchMessages returns newest-first
+  //    const msgs = await chat.fetchMessages(options);
+  //    if (!msgs || msgs.length === 0) {
+  //      log(`[FETCH] Batch ${batchCount} returned 0 messages, done fetching`);
+  //      break;
+  //    }
+  //    all = all.concat(msgs);
+  //    log(`[FETCH] Batch ${batchCount}: got ${msgs.length} messages (total: ${all.length})`);
+  //    if (msgs.length < batch) {
+  //      log(`[FETCH] Batch ${batchCount} has less than ${batch} messages, reached end`);
+  //      break;
+  //    }
+  //    const oldest = msgs[msgs.length - 1];
+  //    lastId = oldest.id && (oldest.id._serialized || oldest.id) || null;
+  //  }
+  } catch(e){ logError(`[FETCH] Error fetching messages: ${e && e.stack || e}`); }
+   
+   // Collect unique sender IDs and fetch contact info
+   const senderIds = new Set();
+   for (const m of all) {
+    const senderId = m.author || m.from || null;
+    if (senderId && typeof senderId === 'string') senderIds.add(senderId);
+   }
+   log(`[FETCH] Found ${senderIds.size} unique senders, fetching contact info...`);
+   
+   // Fetch contact names for all senders
+   let contactsResolved = 0;
+   for (const senderId of senderIds) {
+    try {
+      const contact = await client.getContactById(senderId);
+      if (contact && contact.name) {
+        contactNameCache[senderId] = contact.name;
+        log(`[FETCH] Cached contact: ${senderId} -> ${contact.name}`);
+        contactsResolved++;
+      }
+    } catch (e) {
+      logWarn(`[FETCH] Could not fetch contact for ${senderId}: ${e.message}`);
+    }
+   }
+   log(`[FETCH] Resolved ${contactsResolved}/${senderIds.size} contact names`);
+   
+   // normalize and include chat metadata
+   log(`[FETCH] Normalizing ${all.length} messages...`);
+   const normalized = await Promise.all(all.map(async m => {
+    
+    const id = m.id && (m.id._serialized || m.id) || `msg-${m.timestamp || Date.now()}`;
+    const ts = m.timestamp || Date.now();
+    // Use author if available (group chats), fallback to from
+    const sender = m.author || m.from || 'unknown';
+    const type = (m.type === "video" || m.type === 'image') ? 'image' : (m.type || 'text');
+    const text = m.caption || m.body || '';
+    const reactions = await m.getReactions() || [];
+    const cancelled = reactions.some(item => item.aggregateEmoji === "🚫");
+    const away_goal = reactions.some(item => item.aggregateEmoji === "✈️");
+    const is_gif = m.isGif;
+    return { id, ts, sender, type, text, cancelled, away_goal, is_gif, chatId: (chat.id && chat.id._serialized) || chat.id || null, chatName: chat.name || chat.formattedTitle || null };
+   }));
+   log(`[FETCH] Complete: ${normalized.length} messages normalized`);
+   return normalized;
 }
 
-// Process image message
-async function processImageMessage(message){
-  const id = message.id && (message.id._serialized || message.id) || `msg-${Date.now()}`;
-  const ts = message.timestamp || Date.now();
-  const sender = (message.from || (message._data && message._data.author) || 'unknown');
-  let caption = message.caption || message.body || '';
+async function persistFullAndRecompute(messages){
+  // messages should be chronological (oldest first)
+  log(`[PERSIST] Writing ${messages.length} messages to messages.json`);
+  safeWrite(MESSAGES_PATH, { messages });
+  log(`[PERSIST] Computing totals...`);
+  const { events, totals, hatties } = computeTotals(messages);
+  const out = { updated_at: new Date().toISOString(), totals, events, hatties };
+  log(`[PERSIST] Writing pints.json with ${Object.keys(totals).length} totals and ${events.length} events`);
+  safeWrite(PINTS_PATH, out);
+  log(`[PERSIST] Committing to git...`);
+  gitCommitPush('Update pints data [auto]', ['pints.json','messages.json']);
+  log(`[PERSIST] Complete`);
+}
 
-  let mediaSavedPath = null;
+// Helper: build list of candidate self IDs from client.info and env
+function buildSelfIdCandidates() {
+  const ids = new Set();
   try {
-    if (message.hasMedia) {
-      const media = await message.downloadMedia();
-      if (media && media.data) {
-        const ext = (media.mimetype && media.mimetype.split('/').pop()) || 'bin';
-        const filename = `${id}.${ext}`;
-        const outPath = path.join(MEDIA_DIR, filename);
-        fs.writeFileSync(outPath, Buffer.from(media.data, 'base64'));
-        mediaSavedPath = outPath;
+    if (process.env.DEV_SELF_CHAT_ID) ids.add(process.env.DEV_SELF_CHAT_ID);
+    if (client && client.info) {
+      for (const k of Object.keys(client.info)) {
+        const v = client.info[k];
+        if (!v) continue;
+        if (typeof v === 'string') ids.add(v);
+        if (typeof v === 'object') {
+          if (v._serialized) ids.add(String(v._serialized));
+          if (v.id) ids.add(String(v.id));
+          if (v.user) ids.add(String(v.user));
+        }
       }
     }
-  } catch(e){ console.warn('Failed to download media', e.message); }
-
-  const msgObj = { id, ts, sender, type: 'image', caption, text: caption, media: mediaSavedPath, cancelled: false };
-
-  const num = extractNumberFromText(caption);
-  if (num !== null){ persistIncomingAndRecompute([msgObj]); return; }
-
-  const waitMs = 15000; // 15s window
-  pendingImages.set(sender, { msgObj, created: Date.now() });
-  setTimeout(() => {
-    const p = pendingImages.get(sender);
-    if (p && p.msgObj.id === id){
-      pendingImages.delete(sender);
-      persistIncomingAndRecompute([msgObj]);
-    }
-  }, waitMs);
+  } catch (e) { /* ignore */ }
+  return Array.from(ids).filter(Boolean);
 }
 
-// Process text message (used to attach numbers or cancel previous image)
-async function processTextMessage(message){
-  const id = message.id && (message.id._serialized || message.id) || `msg-${Date.now()}`;
-  const ts = message.timestamp || Date.now();
-  const sender = (message.from || (message._data && message._data.author) || 'unknown');
-  const body = message.body || '';
-
-  if (/^cancel$/i.test(body.trim())){
-    const existing = safeRead(MESSAGES_PATH) || {messages:[]};
-    for (let i = existing.messages.length - 1; i >= 0; i--){
-      const m = existing.messages[i];
-      if (m.sender === sender && m.type === 'image' && !m.cancelled){ m.cancelled = true; persistIncomingAndRecompute([]); return; }
-    }
-  }
-
-  const pending = pendingImages.get(sender);
-  const n = extractNumberFromText(body.trim());
-  if (pending && n !== null){
-    pending.msgObj.text = String(n);
-    pending.msgObj.caption = pending.msgObj.caption ? pending.msgObj.caption + ' ' + n : String(n);
-    pendingImages.delete(sender);
-    persistIncomingAndRecompute([pending.msgObj]);
-    return;
-  }
-
-  const msgObj = { id, ts, sender, type: 'text', text: body };
-  persistIncomingAndRecompute([msgObj]);
-}
-
+// On any message, if it belongs to a chat starting with configured prefix or is the user's self-chat (dev option), fetch the full chat and recompute
 client.on('message', async (message) => {
   try{
-    if (message.type === 'image' || message.hasMedia) {
-      await processImageMessage(message);
-    } else if (message.type === 'chat' || message.type === 'text' || message.body){
-      await processTextMessage(message);
-    } else {
-      const id = message.id && (message.id._serialized || message.id) || `msg-${Date.now()}`;
-      const m = { id, ts: message.timestamp || Date.now(), sender: message.from || 'unknown', type: message.type||'unknown', text: message.body || '' };
-      persistIncomingAndRecompute([m]);
+    const chat = await message.getChat();
+    const prefix = process.env.SCAN_PREFIX || '1500 PINTS';
+    const title = (chat.name || chat.formattedTitle || '').toString();
+
+    const scanSelfEnabled = String(process.env.SCAN_SELF || process.env.DEV_SCAN_SELF || '').toLowerCase() === '1' || String(process.env.SCAN_SELF || process.env.DEV_SCAN_SELF || '').toLowerCase() === 'true';
+    let isSelfChat = false;
+    if (scanSelfEnabled) {
+      const candidates = buildSelfIdCandidates();
+      try {
+        const chatId = (chat.id && (chat.id._serialized || chat.id)) || '';
+        const chatIdNoDomain = chatId.split && chatId.split('@')[0];
+        for (const c of candidates) {
+          if (!c) continue;
+          if (String(chatId).includes(String(c)) || (chatIdNoDomain && String(c).includes(chatIdNoDomain)) || String(c).includes(chatIdNoDomain)) { isSelfChat = true; break; }
+          // also match by title if user sets DEV_SELF_CHAT_TITLE
+          if (process.env.DEV_SELF_CHAT_TITLE && ((chat.name || chat.formattedTitle || '') === process.env.DEV_SELF_CHAT_TITLE)) { isSelfChat = true; break; }
+        }
+      } catch (e) { /* ignore */ }
     }
-  } catch(e){ console.error('message handling error', e && e.stack || e); }
+
+    if ((title && title.toLowerCase().startsWith(String(prefix).toLowerCase())) || isSelfChat) {
+      log(`Message received in matched chat '${title || (chat.id && chat.id._serialized) || 'unknown'}' — full rescan`);
+      const all = await fetchAllMessagesFromChat(chat);
+      await persistFullAndRecompute(all);
+    } else {
+      // ignore messages from other chats
+    }
+  } catch(e){ logError('message handling error', e && e.stack || e); }
+});
+
+const app = express();
+
+// HTTP endpoints to trigger scans manually
+app.get('/scanAll', async (req, res) => {
+  try {
+    const chats = await client.getChats();
+    const combined = [];
+    for (const chat of chats) {
+      chat.name
+      const msgs = await fetchAllMessagesFromChat(chat);
+      combined.push(...msgs);
+    }
+    // sort combined chronologically
+    combined.sort((a,b)=> (Number(a.ts)||0) - (Number(b.ts)||0));
+    await persistFullAndRecompute(combined);
+    res.json({ status: 'ok', scanned: chats.length });
+  } catch (e) {
+    logError('scanAll error', e && e.stack || e);
+    res.status(500).json({ error: String(e) });
+  }
+});
+
+app.get('/scan', async (req, res) => {
+  const title = req.query.title;
+  if (!title) return res.status(400).json({ error: 'missing title query param' });
+  try {
+    const chats = await client.getChats();
+    const found = chats.find(c => c.name === title || c.formattedTitle === title || String(c.id) === title);
+    if (!found) return res.status(404).json({ error: 'chat not found' });
+    const msgs = await fetchAllMessagesFromChat(found);
+    await persistFullAndRecompute(msgs);
+    res.json({ status: 'ok', scanned: found.name || found.formattedTitle || String(found.id) });
+  } catch (e) {
+    logError('scan error', e && e.stack || e);
+    res.status(500).json({ error: String(e) });
+  }
+});
+
+// Scan a chat by prefix match (useful when chat name changes but starts with a known prefix)
+app.get('/scanPrefix', async (req, res) => {
+  log(`[API] /scanPrefix request received (prefix=${req.query.prefix || '1500 PINTS'})`);
+  if (!client || !client.info) {
+    logWarn('[API] Client not ready');
+    return res.status(503).json({ error: 'WhatsApp client not ready' });
+  }
+  const prefix = req.query.prefix || '1500 PINTS';
+  try {
+    log(`[API] Fetching chats...`);
+    const chats = await client.getChats();
+    log(`[API] Got ${chats.length} chats, filtering for prefix '${prefix}'`);
+    const matches = chats.filter(c => ((c.name || c.formattedTitle || '')).startsWith(prefix));
+    log(`[API] Found ${matches.length} matching chats`);
+    if (!matches || matches.length === 0) {
+      logWarn('[API] No chats matching prefix');
+      return res.status(404).json({ error: 'no chats matching prefix' });
+    }
+    // select the most recently active matching chat when multiple present
+    let best = matches[0];
+    for (const c of matches) {
+      const a = c.lastMessage && c.lastMessage.timestamp ? Number(c.lastMessage.timestamp) : 0;
+      const b = best.lastMessage && best.lastMessage.timestamp ? Number(best.lastMessage.timestamp) : 0;
+      if (a > b) best = c;
+    }
+    log(`[API] Selected chat: ${best.name || best.formattedTitle || String(best.id)}`);
+    log(`[API] Fetching all messages from chat...`);
+    const msgs = await fetchAllMessagesFromChat(best);
+    log(`[API] Got ${msgs.length} messages, computing totals...`);
+    await persistFullAndRecompute(msgs);
+    log(`[API] Scan complete, responding with results`);
+    res.json({ status: 'ok', scanned: best.name || best.formattedTitle || String(best.id) });
+  } catch (e) {
+    logError(`[API] scanPrefix error: ${e && e.stack || e}`);
+    res.status(500).json({ error: String(e) });
+  }
 });
 
 // Express server to show status and QR for remote scanning if you expose it
-const app = express();
 app.get('/status', (req,res)=>{
+  log(`[API] /status request received`);
   const p = safeRead(PINTS_PATH) || { updated_at: null, totals: {} };
   res.json(p);
 });
 app.get('/qr', async (req,res)=>{
+  log(`[API] /qr request received`);
   if (lastQrDataUrl) {
     const parts = lastQrDataUrl.split(',');
     const mime = parts[0].match(/data:(.*);base64/)[1];
     const b64 = parts[1];
     const buf = Buffer.from(b64, 'base64');
     res.set('Content-Type', mime);
+    log(`[API] Returning QR code (${buf.length} bytes)`);
     res.send(buf);
   } else if (lastQrString){
     const img = await qrcode.toDataURL(lastQrString).catch(()=>null);
-    if (img) return res.type('png').send(Buffer.from(img.split(',')[1],'base64'));
+    if (img) {
+      log(`[API] Generating QR code from string`);
+      return res.type('png').send(Buffer.from(img.split(',')[1],'base64'));
+    }
+    logWarn(`[API] QR not available`);
     return res.status(404).send('QR not available');
   } else return res.status(404).send('QR not available');
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, ()=> console.log(`Status server listening on ${PORT}`));
+app.listen(PORT, ()=> log(`[STARTUP] Express server listening on port ${PORT}`));
 
-client.initialize();
+log('[STARTUP] Initializing WhatsApp client...');
+try {
+  client.initialize().catch(e => {
+    const msg = String(e && e.message || e);
+    if (msg.includes("auth timeout") || msg.includes("onQRChangedEvent") || msg.includes("already exists")) {
+      logWarn(`[STARTUP] Auth timeout or QR binding issue: ${msg}. Continuing...`);
+    } else {
+      logError(`[STARTUP] Failed to initialize client: ${e && e.stack || e}`);
+      process.exit(1);
+    }
+  });
+} catch (e) {
+  const msg = String(e && e.message || e);
+  if (msg.includes("onQRChangedEvent") || msg.includes("already exists")) {
+    logWarn(`[STARTUP] QR binding already exists. Continuing...`);
+  } else {
+    logError('Failed to initialize client:', e && e.stack || e);
+    process.exit(1);
+  }
+}
 
-process.on('SIGINT', () => { console.log('SIGINT'); client.destroy().then(()=>process.exit(0)); });
-process.on('SIGTERM', () => { console.log('SIGTERM'); client.destroy().then(()=>process.exit(0)); });
+process.on('SIGINT', () => { log('SIGINT'); client.destroy().then(()=>process.exit(0)); });
+process.on('SIGTERM', () => { log('SIGTERM'); client.destroy().then(()=>process.exit(0)); });

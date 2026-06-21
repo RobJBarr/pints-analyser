@@ -41,7 +41,7 @@ sudo apt install -y nodejs
 cd /home/pi
 git clone git@github.com:OWNER/REPO.git pints-analyser   # update OWNER/REPO
 cd pints-analyser
-npm ci
+npm install
 
 3. Start interactively and scan QR
 
