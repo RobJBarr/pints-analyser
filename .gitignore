@@ -6,7 +6,9 @@ media/
 .pints-credentials
 .specify/
 .vscode/
-.github/
+.github/agents
+.github/prompts
+.github/copilot-instructions.md
 .pints*
 pints-self.log
 service.log
