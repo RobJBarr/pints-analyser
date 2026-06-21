@@ -1,7 +1,8 @@
 async function load() {
   try {
-    const r = await fetch('./pints.json', {cache: 'no-store'});
+    const r = await fetch('pints.json', {cache: 'no-store'});
     if (!r.ok) throw new Error('No data');
+    console.log('Loaded pints.json');
     const data = await r.json();
     const table = document.querySelector('#totals tbody');
     table.innerHTML = '';
