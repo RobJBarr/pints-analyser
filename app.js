@@ -10,7 +10,7 @@ async function load() {
     const rows = Object.entries(data.totals || {}).sort((a,b)=>b[1]-a[1]);
     for (const [name,count] of rows) {
       const tr = document.createElement('tr');
-      tr.innerHTML = `<td>${escapeHtml(name)}</td><td>${count}</td>`;
+      tr.innerHTML = `<td>${escapeHtml(name)}</td><td>${count}</td><td>${data.hatties?.[name] || 0}</td>`;
       table.appendChild(tr);
     }
     document.getElementById('last-updated').textContent = 'Last updated: ' + (data.updated_at || 'unknown');
