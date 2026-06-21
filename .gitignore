@@ -1,0 +1,8 @@
+node_modules/
+media/
+.wwebjs_auth/
+.env
+.pints-credentials
+.specify/
+.vscode/
+.github/

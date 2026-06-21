@@ -1,0 +1,15 @@
+[Unit]
+Description=Pints WhatsApp Listener
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/pints-analyser        # Update path to your checkout
+ExecStart=/usr/bin/env node /home/pi/pints-analyser/src/index.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
