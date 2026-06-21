@@ -1,6 +1,7 @@
 async function load() {
   try {
-    const r = await fetch('pints.json', {cache: 'no-store'});
+    console.log('About to load pints.json');
+    const r = await fetch(`pints.json?t=${Date.now()}`, {cache: 'no-store'});
     if (!r.ok) throw new Error('No data');
     console.log('Loaded pints.json');
     const data = await r.json();
