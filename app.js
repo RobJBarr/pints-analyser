@@ -9,8 +9,10 @@ async function load() {
     table.innerHTML = '';
     const rows = Object.entries(data.totals || {}).sort((a,b)=>b[1]-a[1]);
     for (const [name,count] of rows) {
+      console.log(`Adding row for ${name}: ${count} pints, ${data.hatties?.[name] || 0} hattricks`);
       const tr = document.createElement('tr');
       tr.innerHTML = `<td>${escapeHtml(name)}</td><td>${count}</td><td>${data.hatties?.[name] || 0}</td>`;
+      console.log(tr.innerHTML);
       table.appendChild(tr);
     }
     document.getElementById('last-updated').textContent = 'Last updated: ' + (data.updated_at || 'unknown');
