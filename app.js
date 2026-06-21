@@ -187,7 +187,9 @@ async function load() {
     const rows = Object.entries(data.totals || {}).sort((a,b)=>b[1]-a[1]);
     for (const [name,count] of rows) {
       const tr = document.createElement('tr');
-      tr.innerHTML = `<td>${escapeHtml(name)}</td><td>${count}</td>`;
+      console.log(name, count, data.hatties?.[name] || 0);
+      tr.innerHTML = `<td>${escapeHtml(name)}</td><td>${count}</td><td>${data.hatties?.[name] || 0}</td>`;
+      console.log(tr.innerHTML);
       table.appendChild(tr);
     }
     document.getElementById('last-updated').textContent = 'Last updated: ' + (data.updated_at || 'unknown');
