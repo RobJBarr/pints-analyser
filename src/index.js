@@ -72,10 +72,12 @@ function computeTotals(messages){
     totals[senderName] = (totals[senderName]||0) + 1;
     if (event.hattrick) {
       imageCount++;
+      event.count += 1; // count the hattrick bonus
       hatties[senderName] = (hatties[senderName]||0) + 1;
       totals[senderName] = (totals[senderName]||0) + 1;
     }
     if (event.away_goal) {
+      event.count += 1; // count the away goal bonus
       imageCount++;
       totals[senderName] = (totals[senderName]||0) + 1;
     }
