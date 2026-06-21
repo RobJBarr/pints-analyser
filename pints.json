@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T21:19:06.058Z",
+  "updated_at": "2026-06-21T21:22:03.725Z",
   "totals": {
     "Tom Swithenbank": 22,
     "Dominic Richards": 10,
@@ -614,5 +614,10 @@
       "message": "79",
       "hattrick": false
     }
-  ]
+  ],
+  "hatties": {
+    "Tom Swithenbank": 1,
+    "Amie-Leigh Williams": 1,
+    "Joe Clarke": 2
+  }
 }
