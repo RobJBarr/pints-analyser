@@ -13,10 +13,21 @@
 <body>
   <h1>Pints Tracker</h1>
   <div id="last-updated"></div>
+  <h2>At A Glance</h2>
   <table id="totals">
     <thead><tr><th>Participant</th><th>Pints</th><th>Hattricks</th></tr></thead>
     <tbody></tbody>
   </table>
+  <h2>Pints over time</h2>
+  <div id="race-wrap" style="margin:24px 0;max-width:800px">
+  <h2 style="margin:0 0 8px;font-size:1.1em">Pints over time</h2>
+  <canvas id="race-canvas" width="800" height="420" style="width:100%;border:1px solid #ddd"></canvas>
+  <div style="display:flex;align-items:center;gap:8px;margin-top:8px">
+    <button id="race-play" type="button">Play</button>
+    <input id="race-scrub" type="range" min="0" max="0" value="0" style="flex:1">
+    <span id="race-date" style="font-size:0.85em;color:#555;min-width:9em;text-align:right"></span>
+  </div>
+</div>
   <script src="app.js"></script>
 </body>
 </html>
