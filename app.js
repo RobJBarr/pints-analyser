@@ -1,39 +1,54 @@
-// ---- Bar chart race ----
+// ---- Bar chart race (smooth) ----
 // Builds a per-event running-total timeline from data.events, then animates
-// the leaderboard bars growing/reordering over time. Self-contained: only
-// touches #race-canvas, #race-play, #race-scrub, #race-date.
+// the leaderboard with smooth interpolation between event frames using
+// requestAnimationFrame, so bars glide rather than snap.
  
 const RACE_COLORS = [
   '#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f',
   '#edc948', '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac', '#86bcb6'
 ];
  
-let raceState = null; // holds frames + animation handles, rebuilt each time data refreshes
+const RACE_MS_PER_STEP = 350; // how long each event-to-event transition takes
+ 
+let raceState = null;
  
 function buildRaceFrames(events) {
-  // Sort defensively by timestamp in case events arrive out of order.
   const sorted = [...events].sort((a, b) => a.ts - b.ts);
  
   const totals = {};
   const colorFor = {};
   let colorIdx = 0;
  
-  const frames = sorted.map(ev => {
+  // Frame 0 is the "empty" starting state, so the very first event
+  // animates in from zero rather than appearing instantly.
+  const frames = [{ ts: sorted.length ? sorted[0].ts : 0, totals: {} }];
+ 
+  for (const ev of sorted) {
     const amount = typeof ev.count === 'number' ? ev.count : 1;
     totals[ev.sender] = (totals[ev.sender] || 0) + amount;
     if (!(ev.sender in colorFor)) {
       colorFor[ev.sender] = RACE_COLORS[colorIdx % RACE_COLORS.length];
       colorIdx++;
     }
-    // Snapshot totals so each frame is independent of later mutation.
-    return { ts: ev.ts, totals: { ...totals } };
-  });
+    frames.push({ ts: ev.ts, totals: { ...totals } });
+  }
  
   return { frames, colorFor };
 }
  
+// Linearly interpolate between two {name: value} total snapshots.
+function interpolateTotals(a, b, t) {
+  const names = new Set([...Object.keys(a), ...Object.keys(b)]);
+  const out = {};
+  for (const name of names) {
+    const av = a[name] || 0;
+    const bv = b[name] || 0;
+    out[name] = av + (bv - av) * t;
+  }
+  return out;
+}
+ 
 function setupRace(data) {
-  console.log('setupRace called', data.events && data.events.length);
   const canvas = document.getElementById('race-canvas');
   const scrub = document.getElementById('race-scrub');
   const playBtn = document.getElementById('race-play');
@@ -43,28 +58,33 @@ function setupRace(data) {
   const { frames, colorFor } = buildRaceFrames(data.events);
   const ctx = canvas.getContext('2d');
  
-  // Preserve playhead position across data refreshes where possible.
-  const prevIndex = raceState ? raceState.index : frames.length - 1;
+  const prevIndex = raceState ? raceState.index : 0; // start at the beginning on first load
   const wasPlaying = raceState ? raceState.playing : false;
-  if (raceState && raceState.timer) clearInterval(raceState.timer);
+  if (raceState && raceState.rafId) cancelAnimationFrame(raceState.rafId);
  
   raceState = {
     frames,
     colorFor,
-    index: Math.min(prevIndex, frames.length - 1),
+    index: Math.min(prevIndex, frames.length - 1), // index of the frame we're animating FROM
+    progress: 0,        // 0..1 progress toward frames[index + 1]
     playing: false,
-    timer: null
+    rafId: null,
+    lastTick: null
   };
  
   scrub.max = String(frames.length - 1);
   scrub.value = String(raceState.index);
  
-  function drawFrame(i) {
-    const frame = frames[i];
-    if (!frame) return;
+  function currentDisplayTotals() {
+    const a = frames[raceState.index];
+    const b = frames[Math.min(raceState.index + 1, frames.length - 1)];
+    return interpolateTotals(a.totals, b.totals, raceState.progress);
+  }
  
-    const entries = Object.entries(frame.totals).sort((a, b) => b[1] - a[1]);
-    const maxVal = entries.length ? entries[0][1] : 1;
+  function draw() {
+    const totals = currentDisplayTotals();
+    const entries = Object.entries(totals).sort((a, b) => b[1] - a[1]);
+    const maxVal = entries.length ? Math.max(entries[0][1], 1) : 1;
  
     const w = canvas.width, h = canvas.height;
     ctx.clearRect(0, 0, w, h);
@@ -89,51 +109,73 @@ function setupRace(data) {
       ctx.fillText(name, labelW - 8, y + rowH / 2);
  
       ctx.textAlign = 'left';
-      ctx.fillText(String(value), labelW + barW + 6, y + rowH / 2);
+      ctx.fillText(value.toFixed(1), labelW + barW + 6, y + rowH / 2);
     });
  
+    const frame = frames[raceState.index];
     const d = new Date(frame.ts * 1000);
     dateLabel.textContent = d.toLocaleString();
   }
  
-  function goTo(i) {
-    raceState.index = Math.max(0, Math.min(i, frames.length - 1));
+  function tick(now) {
+    if (!raceState.playing) return;
+    if (raceState.lastTick === null) raceState.lastTick = now;
+    const dt = now - raceState.lastTick;
+    raceState.lastTick = now;
+ 
+    raceState.progress += dt / RACE_MS_PER_STEP;
+ 
+    while (raceState.progress >= 1 && raceState.index < frames.length - 1) {
+      raceState.progress -= 1;
+      raceState.index += 1;
+    }
+ 
+    if (raceState.index >= frames.length - 1) {
+      raceState.progress = 0;
+      pause();
+      scrub.value = String(raceState.index);
+      draw();
+      return;
+    }
+ 
     scrub.value = String(raceState.index);
-    drawFrame(raceState.index);
+    draw();
+    raceState.rafId = requestAnimationFrame(tick);
   }
  
   function play() {
     if (raceState.playing) return;
+    if (raceState.index >= frames.length - 1) {
+      raceState.index = 0;
+      raceState.progress = 0;
+    }
     raceState.playing = true;
+    raceState.lastTick = null;
     playBtn.textContent = 'Pause';
-    raceState.timer = setInterval(() => {
-      if (raceState.index >= frames.length - 1) {
-        pause();
-        return;
-      }
-      goTo(raceState.index + 1);
-    }, 120); // ms per event step
+    raceState.rafId = requestAnimationFrame(tick);
   }
  
   function pause() {
     raceState.playing = false;
     playBtn.textContent = 'Play';
-    if (raceState.timer) clearInterval(raceState.timer);
-    raceState.timer = null;
+    if (raceState.rafId) cancelAnimationFrame(raceState.rafId);
+    raceState.rafId = null;
+  }
+ 
+  function goTo(i) {
+    pause();
+    raceState.index = Math.max(0, Math.min(i, frames.length - 1));
+    raceState.progress = 0;
+    scrub.value = String(raceState.index);
+    draw();
   }
  
   playBtn.onclick = () => (raceState.playing ? pause() : play());
-  scrub.oninput = (e) => {
-    pause();
-    goTo(Number(e.target.value));
-  };
+  scrub.oninput = (e) => goTo(Number(e.target.value));
  
-  drawFrame(raceState.index);
+  draw();
   if (wasPlaying) play();
 }
- 
-
-
 
 async function load() {
   try {
