@@ -33,6 +33,7 @@ function buildRaceFrames(events) {
 }
  
 function setupRace(data) {
+  console.log('setupRace called', data.events && data.events.length);
   const canvas = document.getElementById('race-canvas');
   const scrub = document.getElementById('race-scrub');
   const playBtn = document.getElementById('race-play');
