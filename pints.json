@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-06-21T20:39:58.335Z",
+  "updated_at": "2026-06-21T20:53:58.667Z",
   "totals": {
+    "Amie-Leigh Williams": 12,
     "Joe Clarke": 13,
-    "Amie-Leigh Williams": 11,
     "Leo Seal": 1,
     "Harry Tilston": 2,
     "Thomas Bebbington": 9,
@@ -14,6 +14,14 @@
     "Jack Waller": 3
   },
   "events": [
+    {
+      "id": "false_120363411242095628@g.us_3A46B8F734AC0311F851_170059364331768@lid",
+      "ts": 1782075127,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "reactions": {},
+      "message": "79"
+    },
     {
       "id": "false_120363411242095628@g.us_3ABB1289EF2A76175934_48614768406724@lid",
       "ts": 1782060698,
