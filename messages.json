@@ -6335,6 +6335,66 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A4E1783A32B49322A56_207520018784433@lid",
+      "ts": 1782076102,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Just to check, are we saying hatties and away goals count for double? Or count for just 1 extra point?",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A3415CCC71D131E053D_207520018784433@lid",
+      "ts": 1782076113,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "So if you get a hattie abroad is that 4 or 3?",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A34A394B5DF0B3EB128_223462954123378@lid",
+      "ts": 1782076119,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "1 extra",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A571BF90755C9CBFE5D_223462954123378@lid",
+      "ts": 1782076121,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "Not double",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A351137F13235A1A2CC_207520018784433@lid",
+      "ts": 1782076126,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Got it",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
