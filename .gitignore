@@ -1,0 +1,14 @@
+node_modules/
+media/
+.wwebjs_auth/
+.wwebjs_cache/
+.env
+.pints-credentials
+.specify/
+.vscode/
+.github/
+.pints*
+pints-self.log
+service.log
+*.log
+package-lock.json

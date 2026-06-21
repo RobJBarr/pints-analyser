@@ -1,32 +1,105 @@
-Pints Tracker (GitHub Pages + WhatsApp Business Cloud API)
+Pints Tracker — WhatsApp Web listener (Raspberry Pi)
 
 Overview
 
-This project implements a GitHub Pages site that shows per-participant pint totals. Incoming WhatsApp messages are delivered by Meta to a webhook-relay (e.g., Pipedream), which forwards them as repository_dispatch events to this repository. A GitHub Actions workflow processes each event, updates messages.json and pints.json, and commits the aggregated pints.json. The site (index.html) reads pints.json.
+This project runs a headless WhatsApp Web listener (whatsapp-web.js) on a Raspberry Pi. It listens for image and text messages in chats, detects pints posted as images (optionally with a number in the caption or immediately following message), applies these rules:
 
-Setup (high level)
+- Images represent pints. If a number appears in the image caption or in the immediately following text message from the same sender, that number is used; otherwise a single pint is assumed.
+- If a user posts 3 pints in a row, the 3rd pint counts double.
+- Any image/corresponding message marked CANCEL (send a text message "CANCEL" from the same sender) will mark the last image from that sender as cancelled and ignore it.
+- If the image or caption includes a plane emoji (✈️), that pint counts double.
 
-1. Create a GitHub repository and push this project.
-2. Enable GitHub Pages on the repo (branch: main / root or gh-pages) to serve index.html.
-3. Create a Pipedream HTTP source (or similar) that accepts WhatsApp Business Cloud webhooks.
-   - Configure your Meta app to use the Pipedream endpoint as the webhook URL.
-4. In Pipedream, forward incoming webhook bodies to GitHub repository dispatch:
-   - POST https://api.github.com/repos/OWNER/REPO/dispatches
-   - Headers: Authorization: token YOUR_PERSONAL_ACCESS_TOKEN
-   - Body: { "event_type": "whatsapp_event", "client_payload": <whatsapp-webhook-body> }
-5. When a new message arrives, the workflow triggers and updates pints.json.
+The service persists message history in messages.json and writes aggregated totals to pints.json. If Git push credentials are configured on the Pi, the service commits pints.json/messages.json back to the repository so GitHub Pages can serve pints.json for the static site (index.html + app.js included).
 
-Notes and limitations
+Repository contents
 
-- WhatsApp Business Cloud API delivers incoming messages via webhooks — this design uses a webhook relay so you don't need a continuously-running machine.
-- Excluding messages via cancel-reaction depends on the webhook containing reaction metadata. If reactions are not present, provide a convention (e.g., a follow-up message containing "CANCEL" or react via a message) and adjust Pipedream mapping accordingly.
-- The processor uses heuristics: it treats image messages as pint events, looks for a number in the image text or the immediate next text message, defaults to 1 if no number is found, doubles for plane emoji, and applies the 3-in-a-row rule.
+- index.html, app.js — Simple GitHub Pages frontend that reads pints.json and displays totals.
+- src/index.js — Node service using whatsapp-web.js to listen, download media, and compute pints.
+- package.json — Node dependencies and start script.
+- messages.json, pints.json — runtime data files (created/updated by the service).
+- deploy/pints-whatsapp.service — systemd unit file (edit WorkingDirectory/ExecStart paths before installing).
+- DEPLOY_PI.md — longer Raspberry Pi deployment notes and Cloudflare Tunnel instructions.
 
-Security
+Quickstart (Raspberry Pi)
 
-- Pipedream (or your chosen relay) will need a GitHub token to call repository_dispatch. Keep that token secret.
-- The workflow uses the default GITHUB_TOKEN to commit results back to the repo.
+1. Prepare the Pi
 
-If you want, the next step is to:
-- Provide the repository owner/name so the README can be updated with exact steps, and
-- I can create a sample Pipedream mapping snippet for sending the dispatch with the payload format expected here.
+sudo apt update && sudo apt install -y git build-essential curl ca-certificates
+
+Install Chromium and supporting libraries used by puppeteer:
+
+sudo apt install -y chromium-browser libnss3 libatk1.0-0 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2 libasound2 libgbm1 libxss1 libgtk-3-0
+
+Install Node.js (18+ recommended):
+
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install -y nodejs
+
+2. Clone repo and install deps
+
+# as pi user
+cd /home/pi
+git clone git@github.com:OWNER/REPO.git pints-analyser   # update OWNER/REPO
+cd pints-analyser
+npm install
+
+3. Start interactively and scan QR
+
+npm start
+
+On first run the app prints a QR in the console and exposes /qr on port 3000. Open the QR in your phone (WhatsApp -> Linked devices -> Link a device) and scan. After scanning the session is stored in .wwebjs_auth and future runs won’t require scanning.
+
+4. Install as a systemd service (optional)
+
+Edit deploy/pints-whatsapp.service and change WorkingDirectory and ExecStart to your repo path (e.g., /home/pi/pints-analyser):
+
+sudo cp deploy/pints-whatsapp.service /etc/systemd/system/pints-whatsapp.service
+sudo systemctl daemon-reload
+sudo systemctl enable --now pints-whatsapp.service
+sudo journalctl -u pints-whatsapp -f
+
+5. (Optional) Expose QR temporarily for remote scanning — Cloudflare Tunnel
+
+If you need to scan the QR remotely, expose the /qr endpoint temporarily via Cloudflare Tunnel (or ngrok). High-level steps with cloudflared:
+
+- Install cloudflared (ARM binary or package).
+- Authenticate: cloudflared tunnel login
+- Create a tunnel and map a hostname to http://localhost:3000 (see DEPLOY_PI.md for example config).
+- After scanning, remove the route for security.
+
+6. Push access from Pi for automatic updates
+
+The service uses `git commit` and `git push` to update pints.json. Configure push access by adding an SSH key (ssh-keygen -t ed25519) and adding the public key to GitHub. Test `git push` manually.
+
+GitHub Pages
+
+Enable GitHub Pages on your repository (Settings → Pages → Source: main branch / root) to publish index.html and let the site load pints.json from the repo root. The static UI periodically fetches pints.json to display current totals.
+
+Configuration and environment
+
+- PORT (env) — Express status server port (default 3000).
+- PUPPETEER_EXECUTABLE_PATH — if chromium is in a non-standard path set this env var prior to starting.
+- .gitignore contains .wwebjs_auth and media/ to avoid leaking session files and downloaded media.
+
+Security, privacy & compliance
+
+- Ensure you have consent from group participants before monitoring messages.
+- Keep .wwebjs_auth private (it contains session credentials). Do not commit it.
+- If exposing the QR or the status page, use temporary, authenticated tunnels and remove them after use.
+- Use a dedicated GitHub user or token for automated pushes if you prefer HTTPS.
+
+Troubleshooting
+
+- If puppeteer cannot start: confirm Chromium is installed and accessible to the node process. Set PUPPETEER_EXECUTABLE_PATH if needed.
+- If media download fails occasionally, check network and that the running session is healthy (relink if needed).
+- If git push fails, re-check remote URL and SSH key or PAT credentials.
+
+Extending and alternatives
+
+- Replace "CANCEL" convention with more advanced reaction detection if the library gains reaction metadata in the future.
+- Batch commits or rate-limit pushes if message rate is high (to avoid API limits).
+- Add a small web admin UI to review/adjust inferred events before pushing.
+
+Support
+
+See DEPLOY_PI.md for a longer step-by-step deployment guide, Cloudflare Tunnel details, and troubleshooting tips.
