@@ -8,7 +8,7 @@ const RACE_COLORS = [
   '#edc948', '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac', '#86bcb6'
 ];
  
-const RACE_MS_PER_STEP = 350; // how long each event-to-event transition takes
+const RACE_MS_PER_STEP = 600; // how long each event-to-event transition takes
  
 let raceState = null;
  
