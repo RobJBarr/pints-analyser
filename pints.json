@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-06-21T21:00:40.122Z",
+  "updated_at": "2026-06-21T21:01:07.523Z",
   "totals": {
-    "Amie-Leigh Williams": 12,
-    "Joe Clarke": 13,
+    "Amie-Leigh Williams": 11,
+    "Joe Clarke": 11,
     "Leo Seal": 1,
     "Harry Tilston": 2,
     "Thomas Bebbington": 9,
     "Dominic Richards": 10,
-    "Tom Swithenbank": 22,
+    "Tom Swithenbank": 21,
     "Ed Bruckshaw": 1,
     "Wes Oultram": 1,
     "Rob Barr": 5,
@@ -20,13 +20,6 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "79"
-    },
-    {
-      "id": "false_120363411242095628@g.us_3ABB1289EF2A76175934_48614768406724@lid",
-      "ts": 1782060698,
-      "sender": "Joe Clarke",
-      "count": 1,
-      "message": ""
     },
     {
       "id": "false_120363411242095628@g.us_3AAA8A19CCE7D93C493D_48614768406724@lid",
@@ -48,13 +41,6 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "75"
-    },
-    {
-      "id": "false_120363411242095628@g.us_3AE2D56A879726B6C88D_48614768406724@lid",
-      "ts": 1782043477,
-      "sender": "Joe Clarke",
-      "count": 1,
-      "message": ""
     },
     {
       "id": "false_120363411242095628@g.us_3A8B5F84C8501777F5C7_48614768406724@lid",
@@ -281,13 +267,6 @@
       "message": "42"
     },
     {
-      "id": "false_120363411242095628@g.us_3ADB9963B2E2DE7AE088_170059364331768@lid",
-      "ts": 1781893431,
-      "sender": "Amie-Leigh Williams",
-      "count": 1,
-      "message": ""
-    },
-    {
       "id": "false_120363411242095628@g.us_3A72A134A25C6FDDE326_170059364331768@lid",
       "ts": 1781892616,
       "sender": "Amie-Leigh Williams",
@@ -335,13 +314,6 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "33"
-    },
-    {
-      "id": "false_120363411242095628@g.us_3A29CD92231ECA4D1B03_277850192113878@lid",
-      "ts": 1781883965,
-      "sender": "Tom Swithenbank",
-      "count": 1,
-      "message": ""
     },
     {
       "id": "false_120363411242095628@g.us_3AD42F7FBDAE0687EB43_277850192113878@lid",
