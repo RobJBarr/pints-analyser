@@ -6551,6 +6551,54 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A3B7584C1EF7E047546_207520018784433@lid",
+      "ts": 1782222038,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Yeah",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AD3EE0BD32178FA4E94_207520018784433@lid",
+      "ts": 1782222072,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Hasn’t been tested tho so may not work lmao",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A9F709227821974B780_207520018784433@lid",
+      "ts": 1782222103,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Also has to be a reaction instead of part of the message",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A84A8A88DD7ED3D69DD_277850192113878@lid",
+      "ts": 1782222215,
+      "sender": "277850192113878@lid",
+      "type": "chat",
+      "text": "So no need for gifs now right?",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
