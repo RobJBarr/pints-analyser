@@ -6599,6 +6599,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A8FA17D9D30AC176022_277850192113878@lid",
+      "ts": 1782222225,
+      "sender": "277850192113878@lid",
+      "type": "chat",
+      "text": "But then surely the numbers still need to skip right?",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
