@@ -7547,6 +7547,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AAD7C6113D29B3FA39F_207520018784433@lid",
+      "ts": 1782252710,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Anyone wanna move to Spain instead",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
