@@ -6779,6 +6779,66 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AC3D65118908D7D371C_207520018784433@lid",
+      "ts": 1782224147,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Fuck",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AB98645DEEB0EA20BE2_207520018784433@lid",
+      "ts": 1782224153,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Okay I’ll fix that",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A61451F9A0A4CC49260_207520018784433@lid",
+      "ts": 1782224167,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Remove the reaction pls",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3ACFD0EDD641D492F9AB_207520018784433@lid",
+      "ts": 1782224175,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "No free pints when I do fix it",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AA2816B2BC74D08944B_48614768406724@lid",
+      "ts": 1782224548,
+      "sender": "48614768406724@lid",
+      "type": "chat",
+      "text": "👍👍",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
