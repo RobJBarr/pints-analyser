@@ -7499,6 +7499,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AA86B68019ECC9B3968_167727247429877@lid",
+      "ts": 1782251012,
+      "sender": "167727247429877@lid",
+      "type": "chat",
+      "text": "Sorry mate I’ve expended all the knowledge that I have",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
