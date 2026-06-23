@@ -6611,6 +6611,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AFC7D467F982B1340E4_277850192113878@lid",
+      "ts": 1782222233,
+      "sender": "277850192113878@lid",
+      "type": "chat",
+      "text": "Or should we just go off the total pints in the app",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
