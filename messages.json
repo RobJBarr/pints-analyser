@@ -7115,6 +7115,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AB6255F8C55C6AC0EEA_223462954123378@lid",
+      "ts": 1782243887,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "Board ruling - you have to cross sea, Ireland counts",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
