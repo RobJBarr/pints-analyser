@@ -6983,6 +6983,30 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A0610EAEBF91761727A_207520018784433@lid",
+      "ts": 1782243012,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "I was cheated",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC22D97EF01EACEB4FCEB92BFB522E7A_21161320702030@lid",
+      "ts": 1782243031,
+      "sender": "21161320702030@lid",
+      "type": "image",
+      "text": "92",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
