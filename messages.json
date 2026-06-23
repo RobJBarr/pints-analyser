@@ -7211,6 +7211,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AA4CD5764955A3FD58B_277850192113878@lid",
+      "ts": 1782245760,
+      "sender": "277850192113878@lid",
+      "type": "chat",
+      "text": "Would rather shit in my own mouth than be there",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
