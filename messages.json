@@ -6527,6 +6527,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AF9B08B6D05689ECBC6_223462954123378@lid",
+      "ts": 1782221287,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "And add a ✈️ emoji to an away pint to track it",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
