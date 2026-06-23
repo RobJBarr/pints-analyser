@@ -6419,54 +6419,6 @@
       "is_gif": true,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
-    },
-    {
-      "id": "false_120363411242095628@g.us_3A72D58EF2745384058D_170059364331768@lid",
-      "ts": 1782161698,
-      "sender": "170059364331768@lid",
-      "type": "image",
-      "text": "81",
-      "cancelled": false,
-      "away_goal": false,
-      "is_gif": false,
-      "chatId": "120363411242095628@g.us",
-      "chatName": "1500 PINTS 76/1500"
-    },
-    {
-      "id": "false_120363411242095628@g.us_3A0A2E1A6DEE4EE38417_223462954123378@lid",
-      "ts": 1782162093,
-      "sender": "223462954123378@lid",
-      "type": "chat",
-      "text": "82 actually",
-      "cancelled": false,
-      "away_goal": false,
-      "is_gif": false,
-      "chatId": "120363411242095628@g.us",
-      "chatName": "1500 PINTS 76/1500"
-    },
-    {
-      "id": "false_120363411242095628@g.us_3ADD6CA6D8D3D6F1541A_223462954123378@lid",
-      "ts": 1782162095,
-      "sender": "223462954123378@lid",
-      "type": "chat",
-      "text": "Come on Amie",
-      "cancelled": false,
-      "away_goal": false,
-      "is_gif": false,
-      "chatId": "120363411242095628@g.us",
-      "chatName": "1500 PINTS 76/1500"
-    },
-    {
-      "id": "false_120363411242095628@g.us_3AC17AB5B430B1E72FB9_170059364331768@lid",
-      "ts": 1782163969,
-      "sender": "170059364331768@lid",
-      "type": "chat",
-      "text": "82, my bad",
-      "cancelled": false,
-      "away_goal": false,
-      "is_gif": false,
-      "chatId": "120363411242095628@g.us",
-      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
