@@ -183,7 +183,7 @@ async function load() {
     if (!r.ok) throw new Error('No data');
     const data = await r.json();
     const totalPints = Object.values(data.totals || {}).reduce((a,b)=>a+b, 0);
-    document.getElementById('total-pints').textContent = totalPints;
+    document.getElementById('total-pints').textContent = `Total pints: ${totalPints}`;
     const table = document.querySelector('#totals tbody');
     table.innerHTML = '';
     const rows = Object.entries(data.totals || {}).sort((a,b)=>b[1]-a[1]);
