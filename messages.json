@@ -7415,6 +7415,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A58F4ADC78C4926B4F0_207520018784433@lid",
+      "ts": 1782250852,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "People who know ball, can someone pls explain why England are so shit",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
