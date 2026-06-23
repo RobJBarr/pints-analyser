@@ -2346,7 +2346,7 @@
       "sender": "207520018784433@lid",
       "type": "image",
       "text": "20",
-      "cancelled": false,
+      "cancelled": true,
       "away_goal": false,
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
