@@ -7559,6 +7559,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3ADF32A7E3E8C179C977_207520018784433@lid",
+      "ts": 1782252713,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Just sack England off",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
