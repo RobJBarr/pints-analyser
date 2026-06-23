@@ -7439,6 +7439,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_ACF926CB3BCC1D0109F0E46EC1AD98FB_112214744813698@lid",
+      "ts": 1782250919,
+      "sender": "112214744813698@lid",
+      "type": "chat",
+      "text": "People in yellow no let ball in",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
