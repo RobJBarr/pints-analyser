@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-23T20:58:51.871Z",
+  "updated_at": "2026-06-23T21:00:42.960Z",
   "totals": {
     "Tom Swithenbank": 26,
     "Dominic Richards": 14,
     "Thomas Bebbington": 11,
     "Rob Barr": 5,
     "Jack Waller": 5,
-    "Joe Clarke": 17,
+    "Joe Clarke": 18,
     "Wes Oultram": 1,
     "Ed Bruckshaw": 1,
     "Amie-Leigh Williams": 15,
@@ -798,6 +798,14 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "103 England stink",
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC92FF2EA3ADB83621F_48614768406724@lid",
+      "ts": 1782248441,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "104",
       "hattrick": false
     }
   ],
