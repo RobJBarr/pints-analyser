@@ -7139,6 +7139,30 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AFBDF88F558295B86B8_207520018784433@lid",
+      "ts": 1782244193,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Half pint or just massive head?",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A93F3FA502B8F3165D6_48614768406724@lid",
+      "ts": 1782245560,
+      "sender": "48614768406724@lid",
+      "type": "image",
+      "text": "95",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
