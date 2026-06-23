@@ -2347,7 +2347,7 @@
       "type": "image",
       "text": "20",
       "cancelled": false,
-      "away_goal": true,
+      "away_goal": false,
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
