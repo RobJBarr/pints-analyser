@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T19:02:23.404Z",
+  "updated_at": "2026-06-23T19:23:13.289Z",
   "totals": {
     "Tom Swithenbank": 23,
     "Dominic Richards": 11,
@@ -11,7 +11,8 @@
     "Ed Bruckshaw": 1,
     "Amie-Leigh Williams": 15,
     "Harry Tilston": 2,
-    "Leo Seal": 1
+    "Leo Seal": 1,
+    "Tom Ravenscroft": 1
   },
   "events": [
     {
@@ -668,6 +669,14 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "87",
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A7A631E325AC3FFEF02_236133074079830@lid",
+      "ts": 1782242591,
+      "sender": "Tom Ravenscroft",
+      "count": 1,
+      "message": "88",
       "hattrick": false
     }
   ],
