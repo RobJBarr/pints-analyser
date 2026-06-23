@@ -6923,6 +6923,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A2497E027461C0E0B98_48614768406724@lid",
+      "ts": 1782242977,
+      "sender": "48614768406724@lid",
+      "type": "chat",
+      "text": "Chat is there a rule about a scenic Bev",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
