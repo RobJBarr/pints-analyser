@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-23T21:14:38.210Z",
+  "updated_at": "2026-06-23T21:14:58.661Z",
   "totals": {
     "Tom Swithenbank": 26,
     "Dominic Richards": 14,
     "Thomas Bebbington": 11,
-    "Rob Barr": 5,
+    "Rob Barr": 6,
     "Jack Waller": 5,
     "Joe Clarke": 18,
     "Wes Oultram": 1,
@@ -22,7 +22,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "1",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -31,7 +31,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "2",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -40,7 +40,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "3",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -49,7 +49,7 @@
       "sender": "Rob Barr",
       "count": 1,
       "message": "4",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -58,7 +58,7 @@
       "sender": "Jack Waller",
       "count": 1,
       "message": "5",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -67,7 +67,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "6",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -76,7 +76,7 @@
       "sender": "Jack Waller",
       "count": 1,
       "message": "7",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -85,7 +85,7 @@
       "sender": "Rob Barr",
       "count": 1,
       "message": "8",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -94,7 +94,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "9",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -103,7 +103,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "10 we’re moving at Godspeed",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -112,7 +112,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "11",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -121,7 +121,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "twelve",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -130,7 +130,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "13",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -139,7 +139,7 @@
       "sender": "Rob Barr",
       "count": 1,
       "message": "Great age (14)",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -148,7 +148,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "15",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -157,7 +157,7 @@
       "sender": "Jack Waller",
       "count": 1,
       "message": "16",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -166,7 +166,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "17",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -175,7 +175,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "18",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -184,16 +184,16 @@
       "sender": "Rob Barr",
       "count": 1,
       "message": "19",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
       "id": "true_120363411242095628@g.us_3ADF3734B9FD6F0393C4_207520018784433@lid",
       "ts": 1781803278,
       "sender": "Rob Barr",
-      "count": 1,
+      "count": 2,
       "message": "20",
-      "away_goals": true,
+      "away_goal": true,
       "hattrick": false
     },
     {
@@ -202,7 +202,7 @@
       "sender": "Wes Oultram",
       "count": 1,
       "message": "",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -211,7 +211,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "22",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -220,7 +220,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "23",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -229,7 +229,7 @@
       "sender": "Ed Bruckshaw",
       "count": 1,
       "message": "",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -238,7 +238,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "25",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -247,7 +247,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "26",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -256,7 +256,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "27",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -265,7 +265,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "28",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -274,7 +274,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "29",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -283,7 +283,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "30",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -292,7 +292,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "31",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -301,7 +301,7 @@
       "sender": "Tom Swithenbank",
       "count": 2,
       "message": "32",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": true
     },
     {
@@ -310,7 +310,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "33",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -319,7 +319,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "34",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -328,7 +328,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "35",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -337,7 +337,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "37",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -346,7 +346,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "38",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -355,7 +355,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "39",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -364,7 +364,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 2,
       "message": "41",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": true
     },
     {
@@ -373,7 +373,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "42",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -382,7 +382,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "43",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -391,7 +391,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "44",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -400,7 +400,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "45",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -409,7 +409,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "46 sahur",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -418,7 +418,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "47",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -427,7 +427,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "48",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -436,7 +436,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "49",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -445,7 +445,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "Fiftysina pintantina (50)",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -454,7 +454,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "51",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -463,7 +463,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "52",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -472,7 +472,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "53",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -481,7 +481,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "54",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -490,7 +490,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "55",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -499,7 +499,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "56",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -508,7 +508,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "57 boiiiiii",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -517,7 +517,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "58",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -526,7 +526,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "59",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -535,7 +535,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "60",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -544,7 +544,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "61 😛",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -553,7 +553,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "62 gang",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -562,7 +562,7 @@
       "sender": "Harry Tilston",
       "count": 1,
       "message": "",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -571,7 +571,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "64",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -580,7 +580,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "65",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -589,7 +589,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "66",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -598,7 +598,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "6767676767676767",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -607,7 +607,7 @@
       "sender": "Harry Tilston",
       "count": 1,
       "message": "68",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -616,7 +616,7 @@
       "sender": "Leo Seal",
       "count": 1,
       "message": "69 waheyyy",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -625,7 +625,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "70",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -634,7 +634,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "71",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -643,7 +643,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "72",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -652,7 +652,7 @@
       "sender": "Joe Clarke",
       "count": 2,
       "message": "73",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": true
     },
     {
@@ -661,7 +661,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "75",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -670,7 +670,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "76",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -679,7 +679,7 @@
       "sender": "Joe Clarke",
       "count": 2,
       "message": "78 chuds",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": true
     },
     {
@@ -688,7 +688,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "79",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -697,7 +697,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 1,
       "message": "80",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -706,7 +706,7 @@
       "sender": "Amie-Leigh Williams",
       "count": 2,
       "message": "81",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": true
     },
     {
@@ -715,7 +715,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "83",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -724,7 +724,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "84",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -733,7 +733,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "85",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -742,7 +742,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "86",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -751,7 +751,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "87",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -760,7 +760,7 @@
       "sender": "Tom Ravenscroft",
       "count": 1,
       "message": "88",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -769,7 +769,7 @@
       "sender": "James Smith",
       "count": 1,
       "message": "89",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -778,7 +778,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "90",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -787,7 +787,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "91",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -796,7 +796,7 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "92",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -805,7 +805,7 @@
       "sender": "Jack Waller",
       "count": 1,
       "message": "93",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -814,7 +814,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "94",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -823,7 +823,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "95",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -832,7 +832,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "96",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -841,7 +841,7 @@
       "sender": "Jack Waller",
       "count": 1,
       "message": "97",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -850,7 +850,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "98",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -859,7 +859,7 @@
       "sender": "Harry Tilston",
       "count": 1,
       "message": "99",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -868,7 +868,7 @@
       "sender": "James Smith",
       "count": 1,
       "message": "100",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -877,7 +877,7 @@
       "sender": "Tom Ravenscroft",
       "count": 1,
       "message": "101",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -886,7 +886,7 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "102",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -895,7 +895,7 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "103 England stink",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     },
     {
@@ -904,7 +904,7 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "104",
-      "away_goals": false,
+      "away_goal": false,
       "hattrick": false
     }
   ],
@@ -913,5 +913,7 @@
     "Amie-Leigh Williams": 2,
     "Joe Clarke": 2
   },
-  "away_goals": {}
+  "away_goals": {
+    "Rob Barr": 1
+  }
 }
