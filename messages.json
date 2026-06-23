@@ -7511,6 +7511,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A08865FBA5DC3089A07_74844217557181@lid",
+      "ts": 1782252678,
+      "sender": "74844217557181@lid",
+      "type": "chat",
+      "text": "That game was painful",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
