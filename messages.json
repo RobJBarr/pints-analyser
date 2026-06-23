@@ -7055,6 +7055,30 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AD24AE82C0CD509DFE1_207520018784433@lid",
+      "ts": 1782243198,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "@223462954123378 do Scotland and wales count for away goals?",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC7458F76ED14C97D6DF9E666F00D581_21161320702030@lid",
+      "ts": 1782243258,
+      "sender": "21161320702030@lid",
+      "type": "chat",
+      "text": "the board discussed this at the weekend",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
