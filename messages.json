@@ -6647,6 +6647,90 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AC4BBCA07E8BEE72B31_207520018784433@lid",
+      "ts": 1782222600,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Yeah I guess just if you hit a hattie you can add 1 to your total",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A70BB5656D58051921F_207520018784433@lid",
+      "ts": 1782222618,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "And in theory the page should be correct",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A2ACE1AD0943954D118_207520018784433@lid",
+      "ts": 1782222633,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Actually lemme test the ✈️ thing now",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A87092720C119C0D4B3_207520018784433@lid",
+      "ts": 1782222656,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Joe ur getting a temporary free pint",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A375F70ABB142CE9DF7_207520018784433@lid",
+      "ts": 1782222814,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Okay it doesn’t work lol",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AD44BDD115F582FFCB8_207520018784433@lid",
+      "ts": 1782222819,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "I’ll fix that",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A6F3CBA05EA871C0302_48614768406724@lid",
+      "ts": 1782223817,
+      "sender": "48614768406724@lid",
+      "type": "chat",
+      "text": "So you want me to react to the chat with the aeroplane ✈️",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
