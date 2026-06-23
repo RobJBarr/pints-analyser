@@ -7427,6 +7427,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A756FE0599AB4E426E2_167727247429877@lid",
+      "ts": 1782250899,
+      "sender": "167727247429877@lid",
+      "type": "chat",
+      "text": "Ball no go in net",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
