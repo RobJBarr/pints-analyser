@@ -7031,6 +7031,30 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A31008AC144F4CC8E94_207520018784433@lid",
+      "ts": 1782243044,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Yeah go on",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A1B2F32761D00D2D4FA_48614768406724@lid",
+      "ts": 1782243099,
+      "sender": "48614768406724@lid",
+      "type": "chat",
+      "text": "Sweeeet",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
