@@ -7223,6 +7223,30 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AF739ADD8F1AE6A2914_207520018784433@lid",
+      "ts": 1782245779,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "If you did that I’d vote you for scenic pint",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AB0C6628D321FF461FA_277850192113878@lid",
+      "ts": 1782245800,
+      "sender": "277850192113878@lid",
+      "type": "chat",
+      "text": "Me, a pint, and shit in my mouth",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
