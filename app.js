@@ -199,6 +199,7 @@ async function load() {
     setupRace(data); // <-- add this line
 
   } catch (e) {
+    console.error("e");
     document.getElementById('last-updated').textContent = 'No pints data yet.';
   }
 }
