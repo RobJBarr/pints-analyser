@@ -2347,7 +2347,7 @@
       "type": "image",
       "text": "20",
       "cancelled": false,
-      "away_goal": true,
+      "away_goal": false,
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
@@ -7386,6 +7386,18 @@
       "sender": "223462954123378@lid",
       "type": "document",
       "text": "HOG HORN.mp3",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ACDBA64CFA16F94F9B3_277850192113878@lid",
+      "ts": 1782249639,
+      "sender": "277850192113878@lid",
+      "type": "image",
+      "text": "105",
       "cancelled": false,
       "away_goal": false,
       "is_gif": false,
