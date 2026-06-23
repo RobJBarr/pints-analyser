@@ -6935,6 +6935,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC3BDA53014FDC23576967818D49BBE0_21161320702030@lid",
+      "ts": 1782242996,
+      "sender": "21161320702030@lid",
+      "type": "chat",
+      "text": "there was going to be a prize for it last season",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
