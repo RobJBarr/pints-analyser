@@ -7343,6 +7343,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AB10B8A2A19F1139344_223462954123378@lid",
+      "ts": 1782248330,
+      "sender": "223462954123378@lid",
+      "type": "image",
+      "text": "103 England stink",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
