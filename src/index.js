@@ -265,7 +265,7 @@ async function persistFullAndRecompute(messages){
   safeWrite(MESSAGES_PATH, { messages });
   log(`[PERSIST] Computing totals...`);
   const { events, totals, hatties, away_goals} = computeTotals(messages);
-  const out = { updated_at: new Date().toISOString(), totals, events, hatties };
+  const out = { updated_at: new Date().toISOString(), totals, events, hatties, away_goals};
   log(`[PERSIST] Writing pints.json with ${Object.keys(totals).length} totals and ${events.length} events`);
   safeWrite(PINTS_PATH, out);
   log(`[PERSIST] Committing to git...`);
