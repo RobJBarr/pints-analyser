@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-23T19:23:38.252Z",
+  "updated_at": "2026-06-23T19:25:20.937Z",
   "totals": {
     "Tom Swithenbank": 23,
     "Dominic Richards": 11,
     "Thomas Bebbington": 10,
     "Rob Barr": 5,
     "Jack Waller": 3,
-    "Joe Clarke": 15,
+    "Joe Clarke": 16,
     "Wes Oultram": 1,
     "Ed Bruckshaw": 1,
     "Amie-Leigh Williams": 15,
@@ -686,6 +686,14 @@
       "sender": "James Smith",
       "count": 1,
       "message": "89",
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A9115A90C6774BE2CFF_48614768406724@lid",
+      "ts": 1782242719,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "90",
       "hattrick": false
     }
   ],
