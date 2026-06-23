@@ -182,13 +182,15 @@ async function load() {
     const r = await fetch(`pints.json?t=${Date.now()}`, {cache: 'no-store'});
     if (!r.ok) throw new Error('No data');
     const data = await r.json();
+    const totalPints = Object.values(data.totals || {}).reduce((a,b)=>a+b, 0);
+    document.getElementById('total-pints').textContent = totalPints;
     const table = document.querySelector('#totals tbody');
     table.innerHTML = '';
     const rows = Object.entries(data.totals || {}).sort((a,b)=>b[1]-a[1]);
     for (const [name,count] of rows) {
       const tr = document.createElement('tr');
       console.log(name, count, data.hatties?.[name] || 0);
-      tr.innerHTML = `<td>${escapeHtml(name)}</td><td>${count}</td><td>${data.hatties?.[name] || 0}</td>`;
+      tr.innerHTML = `<td>${escapeHtml(name)}</td><td>${count}</td><td>${data.hatties?.[name] || 0}</td><td>${data.away_goals?.[name] || 0}</td>`;
       console.log(tr.innerHTML);
       table.appendChild(tr);
     }

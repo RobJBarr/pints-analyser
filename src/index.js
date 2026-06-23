@@ -50,6 +50,7 @@ function computeTotals(messages){
   log(`[COMPUTE] Starting to compute totals from ${messages.length} messages`);
   // Simple count: just tally image messages per sender (no multipliers, no rules)
   const totals = {};
+  const away_goals = {};
   let events = [];
   const hatties = {};
   let imageCount = 0;
@@ -79,6 +80,7 @@ function computeTotals(messages){
     if (event.away_goal) {
       event.count += 1; // count the away goal bonus
       imageCount++;
+      away_goals[senderName] = (away_goals[senderName]||0) + 1;
       totals[senderName] = (totals[senderName]||0) + 1;
     }
   }
@@ -88,7 +90,7 @@ function computeTotals(messages){
     log(`[COMPUTE]   ${sender}: ${count} images, hattricks: ${hatties[sender] || 0}`);
   }
 
-  return {events, totals, hatties};
+  return {events, totals, hatties, away_goals};
 }
 
 function dedupeAndMerge(existingMessages, incoming){
