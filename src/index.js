@@ -63,7 +63,8 @@ function computeTotals(messages){
     // Resolve sender ID to name using cache, fallback to ID
     const senderId = m.sender || 'unknown';
     const senderName = contactNameCache[senderId] || senderId;
-    events.push({ id: m.id, ts: m.ts, sender: senderName, count: 1, reactions: m.reactions, message: m.text});
+    if (m.away_goal) {console.log("AWAY GOAL", m, senderName);}
+    events.push({ id: m.id, ts: m.ts, sender: senderName, count: 1, reactions: m.reactions, message: m.text, away_goal: m.away_goal});
   }
   log(`[COMPUTE] Found ${events.length} image events, now checking for hattricks and away goals`);
   events = markHattricks(events);
@@ -85,9 +86,9 @@ function computeTotals(messages){
     }
   }
 
-  log(`[COMPUTE] Found ${imageCount} submissions from ${Object.keys(totals).length} senders, including ${Object.values(hatties).reduce((a,b)=>a+b, 0)} hattricks`);
+  log(`[COMPUTE] Found ${imageCount} submissions from ${Object.keys(totals).length} senders, including ${Object.values(hatties).reduce((a,b)=>a+b, 0)} hattricks, and ${Object.values(away_goals).reduce((a,b)=>a+b, 0)} away goals`);
   for (const [sender, count] of Object.entries(totals)) {
-    log(`[COMPUTE]   ${sender}: ${count} images, hattricks: ${hatties[sender] || 0}`);
+    log(`[COMPUTE]   ${sender}: ${count} images, hattricks: ${hatties[sender] || 0}, away goals: ${away_goals[sender] || 0}`);
   }
 
   return {events, totals, hatties, away_goals};
@@ -250,8 +251,12 @@ async function fetchAllMessagesFromChat(chat){
     const type = (m.type === "video" || m.type === 'image') ? 'image' : (m.type || 'text');
     const text = m.caption || m.body || '';
     const reactions = await m.getReactions() || [];
-    const cancelled = reactions.some(item => item.aggregateEmoji === "🚫");
-    const away_goal = reactions.some(item => item.aggregateEmoji === "✈️");
+    
+    const cancelled = reactions.some(item => item.aggregateEmoji === "🚫" || item.aggregateEmoji === "❌");
+    const away_goal = reactions.some(item => item.aggregateEmoji === '✈' || item.aggregateEmoji === '\u2708');
+    if (text == "20"){
+      console.log("20", m, reactions, cancelled, away_goal);
+    }
     const is_gif = m.isGif;
     return { id, ts, sender, type, text, cancelled, away_goal, is_gif, chatId: (chat.id && chat.id._serialized) || chat.id || null, chatName: chat.name || chat.formattedTitle || null };
    }));
@@ -295,7 +300,7 @@ function buildSelfIdCandidates() {
 }
 
 // On any message, if it belongs to a chat starting with configured prefix or is the user's self-chat (dev option), fetch the full chat and recompute
-client.on('message', async (message) => {
+client.on('message_create', async (message) => {
   try{
     const chat = await message.getChat();
     const prefix = process.env.SCAN_PREFIX || '1500 PINTS';
