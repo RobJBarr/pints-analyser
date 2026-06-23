@@ -2346,8 +2346,8 @@
       "sender": "207520018784433@lid",
       "type": "image",
       "text": "20",
-      "cancelled": true,
-      "away_goal": false,
+      "cancelled": false,
+      "away_goal": true,
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
