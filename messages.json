@@ -7463,6 +7463,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A1747A6BE93F72EB29A_207520018784433@lid",
+      "ts": 1782250966,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "But their entire job is just to kick ball in net, why have they not kicked ball in net?",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
