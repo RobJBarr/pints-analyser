@@ -7787,6 +7787,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC618AD22BE4AA12E53_74844217557181@lid",
+      "ts": 1782319796,
+      "sender": "74844217557181@lid",
+      "type": "chat",
+      "text": "Rooftop view of the best city in the world, scenic",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
