@@ -7895,6 +7895,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AF0E5DF5CB25E61BEC7_48614768406724@lid",
+      "ts": 1782332470,
+      "sender": "48614768406724@lid",
+      "type": "chat",
+      "text": "Well what’s the rule on forgetting you have to send in a pint until you’ve drank half of it",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
