@@ -7775,6 +7775,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A1B2BFF5A5EA9143B00_223462954123378@lid",
+      "ts": 1782319796,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "That’s defo a half",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
