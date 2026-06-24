@@ -8651,6 +8651,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC383371E570A1E84D4CC2BB95CA3F7C_112214744813698@lid",
+      "ts": 1782334144,
+      "sender": "112214744813698@lid",
+      "type": "chat",
+      "text": "How's it done? Purely out of interest, apologies those who don't give a shit",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
