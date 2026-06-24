@@ -8555,6 +8555,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC4C5553305B4D2D6A1_277850192113878@lid",
+      "ts": 1782334080,
+      "sender": "277850192113878@lid",
+      "type": "chat",
+      "text": "Dont think it is",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
