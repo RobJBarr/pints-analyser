@@ -274,7 +274,7 @@ async function persistFullAndRecompute(messages){
   log(`[PERSIST] Writing pints.json with ${Object.keys(totals).length} totals and ${events.length} events`);
   safeWrite(PINTS_PATH, out);
   log(`[PERSIST] Committing to git...`);
-  gitCommitPush('Update pints data [auto]', ['pints.json','messages.json']);
+  gitCommitPush('Update pints data [auto]', ['pints.json']);
   log(`[PERSIST] Complete`);
 }
 
