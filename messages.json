@@ -7763,6 +7763,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AD1A95D6957255EDEC2_74844217557181@lid",
+      "ts": 1782319781,
+      "sender": "74844217557181@lid",
+      "type": "chat",
+      "text": "It’s not a half lad",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
