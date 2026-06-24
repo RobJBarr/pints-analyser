@@ -8195,6 +8195,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A30E0D6419C64FE6544_207520018784433@lid",
+      "ts": 1782333639,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "This is the kind of tomfoolery we don’t tolerate",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
