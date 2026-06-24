@@ -8627,6 +8627,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A6A22156042E2AE728C_223462954123378@lid",
+      "ts": 1782334137,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "Hoggie???",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
