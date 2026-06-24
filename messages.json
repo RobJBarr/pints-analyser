@@ -7667,6 +7667,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A9BA34FB3D40A8CB083_272116444340299@lid",
+      "ts": 1782297731,
+      "sender": "272116444340299@lid",
+      "type": "chat",
+      "text": "An uncontested hat trick",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
