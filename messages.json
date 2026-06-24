@@ -8663,6 +8663,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ABB3D26AE7E88B099F6_223462954123378@lid",
+      "ts": 1782334144,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "The league is displeased about this",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
