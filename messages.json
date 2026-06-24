@@ -7867,7 +7867,7 @@
       "type": "image",
       "text": "113",
       "cancelled": false,
-      "away_goal": false,
+      "away_goal": true,
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
@@ -8526,6 +8526,18 @@
       "sender": "207520018784433@lid",
       "type": "chat",
       "text": "Let’s test",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A85020FF5A6C93A17D4_223462954123378@lid",
+      "ts": 1782334047,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "Give it me",
       "cancelled": false,
       "away_goal": false,
       "is_gif": false,
