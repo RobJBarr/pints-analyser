@@ -8615,6 +8615,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A5BCF728E892502479B_207520018784433@lid",
+      "ts": 1782334135,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Coz it realised what a gimp you are",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
