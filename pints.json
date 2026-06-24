@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T11:49:19.601Z",
+  "updated_at": "2026-06-24T16:48:51.301Z",
   "totals": {
     "Tom Swithenbank": 27,
     "Dominic Richards": 15,
@@ -11,7 +11,7 @@
     "Ed Bruckshaw": 1,
     "Amie-Leigh Williams": 15,
     "Harry Tilston": 3,
-    "Leo Seal": 1,
+    "Leo Seal": 2,
     "Tom Ravenscroft": 2,
     "James Smith": 3
   },
@@ -940,6 +940,15 @@
       "sender": "James Smith",
       "count": 1,
       "message": "",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AE1FE62B60CD5DE462A_74844217557181@lid",
+      "ts": 1782319729,
+      "sender": "Leo Seal",
+      "count": 1,
+      "message": "109 - scenic pint submission",
       "away_goal": false,
       "hattrick": false
     }
