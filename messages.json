@@ -7799,6 +7799,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AAB4E0C680C8C117069_223462954123378@lid",
+      "ts": 1782319801,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "That’s not regulation",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
