@@ -8723,6 +8723,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AF76BE8C4533315EDA6_207520018784433@lid",
+      "ts": 1782334254,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "It’s basically an instance of WhatsApp web running in the background",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
