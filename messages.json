@@ -8675,6 +8675,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ABA836D5FB47AC10CD4_272116444340299@lid",
+      "ts": 1782334218,
+      "sender": "272116444340299@lid",
+      "type": "chat",
+      "text": "I thought the WhatsApp encryption might have screwed it up",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
