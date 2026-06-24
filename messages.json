@@ -8579,6 +8579,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A458D3C02B8DB0DD2D8_207520018784433@lid",
+      "ts": 1782334092,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "It’s not very well made",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
