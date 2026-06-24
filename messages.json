@@ -8483,6 +8483,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A431B1E0DC246FE6EDA_167727247429877@lid",
+      "ts": 1782334017,
+      "sender": "167727247429877@lid",
+      "type": "chat",
+      "text": "Swithers needs to pull this finger out",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
