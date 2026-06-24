@@ -8543,6 +8543,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AFB6CB6830031D83C10_223462954123378@lid",
+      "ts": 1782334050,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "Gwan son",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
