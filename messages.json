@@ -8747,6 +8747,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC90E282558C5B89794860F2044CDE1A_112214744813698@lid",
+      "ts": 1782334294,
+      "sender": "112214744813698@lid",
+      "type": "chat",
+      "text": "Knew the last couple from the URL, but like the raspberry pi use",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
