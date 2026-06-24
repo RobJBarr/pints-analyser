@@ -8735,6 +8735,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A7C056AE006E43EC658_207520018784433@lid",
+      "ts": 1782334271,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "I had to authenticate by printing the QR code and scanning it lol",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
