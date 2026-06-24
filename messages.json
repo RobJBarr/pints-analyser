@@ -8015,6 +8015,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A877A2A55FF9CB03DDF_48614768406724@lid",
+      "ts": 1782333314,
+      "sender": "48614768406724@lid",
+      "type": "chat",
+      "text": "Nah trust it was mid splitting the g",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
