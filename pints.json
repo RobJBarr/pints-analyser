@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-06-24T16:50:30.878Z",
+  "updated_at": "2026-06-24T17:21:54.490Z",
   "totals": {
     "Tom Swithenbank": 27,
     "Dominic Richards": 15,
     "Thomas Bebbington": 11,
     "Rob Barr": 5,
     "Jack Waller": 5,
-    "Joe Clarke": 19,
+    "Joe Clarke": 20,
     "Wes Oultram": 1,
     "Ed Bruckshaw": 1,
     "Amie-Leigh Williams": 15,
@@ -949,6 +949,15 @@
       "sender": "Leo Seal",
       "count": 1,
       "message": "109 - scenic pint submission",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A3C2569C94A4B06A774_48614768406724@lid",
+      "ts": 1782321713,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "110",
       "away_goal": false,
       "hattrick": false
     }
