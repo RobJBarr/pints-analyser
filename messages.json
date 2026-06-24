@@ -8507,6 +8507,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ACE9B302FC1F03609FE_223462954123378@lid",
+      "ts": 1782334031,
+      "sender": "223462954123378@lid",
+      "type": "chat",
+      "text": "Is away goals fixed?",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
