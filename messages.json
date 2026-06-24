@@ -8039,6 +8039,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A71BFE4F51E4C60D679_277850192113878@lid",
+      "ts": 1782333347,
+      "sender": "277850192113878@lid",
+      "type": "chat",
+      "text": "Just conveniently missed the g by about half a pint below",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
