@@ -7679,6 +7679,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A3D73F9ECFB7770170C_272116444340299@lid",
+      "ts": 1782297741,
+      "sender": "272116444340299@lid",
+      "type": "chat",
+      "text": "Lunchtime pint may be needed",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
