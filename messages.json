@@ -7867,7 +7867,7 @@
       "type": "image",
       "text": "113",
       "cancelled": false,
-      "away_goal": true,
+      "away_goal": false,
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
@@ -8682,6 +8682,18 @@
       "sender": "272116444340299@lid",
       "type": "chat",
       "text": "I thought the WhatsApp encryption might have screwed it up",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AF3382DB98BAAAB8590_207520018784433@lid",
+      "ts": 1782334230,
+      "sender": "207520018784433@lid",
+      "type": "chat",
+      "text": "Local app on a raspberry pi with a webhook to listen for new messages. Upon changes, pushes to a git repo, triggers a github pages release",
       "cancelled": false,
       "away_goal": false,
       "is_gif": false,
