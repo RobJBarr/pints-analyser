@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T10:42:22.829Z",
+  "updated_at": "2026-06-24T11:49:07.918Z",
   "totals": {
     "Tom Swithenbank": 27,
     "Dominic Richards": 15,
@@ -13,7 +13,7 @@
     "Harry Tilston": 3,
     "Leo Seal": 1,
     "Tom Ravenscroft": 2,
-    "James Smith": 2
+    "James Smith": 3
   },
   "events": [
     {
@@ -931,6 +931,15 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "107",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC83A0AC09A4750B3F3AB1C4E5B0FF68_112214744813698@lid",
+      "ts": 1782301746,
+      "sender": "James Smith",
+      "count": 1,
+      "message": "",
       "away_goal": false,
       "hattrick": false
     }
