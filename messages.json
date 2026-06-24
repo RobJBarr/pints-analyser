@@ -8711,6 +8711,18 @@
       "is_gif": false,
       "chatId": "120363411242095628@g.us",
       "chatName": "1500 PINTS 76/1500"
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC70BA442478A06D66E66BCE7D97DDD2_112214744813698@lid",
+      "ts": 1782334251,
+      "sender": "112214744813698@lid",
+      "type": "chat",
+      "text": "Also what I was thinking, but they laxed some of it not long ago I think",
+      "cancelled": false,
+      "away_goal": false,
+      "is_gif": false,
+      "chatId": "120363411242095628@g.us",
+      "chatName": "1500 PINTS 76/1500"
     }
   ]
 }
