@@ -85,7 +85,7 @@ function computeTotals(messages){
       totals[senderName] = (totals[senderName]||0) + 1;
     }
   }
-
+  totals["Tom Swithenbank"] = (totals["Tom Swithenbank"]||0) - 15;
   log(`[COMPUTE] Found ${imageCount} submissions from ${Object.keys(totals).length} senders, including ${Object.values(hatties).reduce((a,b)=>a+b, 0)} hattricks, and ${Object.values(away_goals).reduce((a,b)=>a+b, 0)} away goals`);
   for (const [sender, count] of Object.entries(totals)) {
     log(`[COMPUTE]   ${sender}: ${count} images, hattricks: ${hatties[sender] || 0}, away goals: ${away_goals[sender] || 0}`);
@@ -337,16 +337,14 @@ const app = express();
 // HTTP endpoints to trigger scans manually
 app.get('/scanAll', async (req, res) => {
   try {
-    const chats = await client.getChats();
+    const prefix = '1500 PINTS';
     const combined = [];
-    for (const chat of chats) {
-      chat.name
-      const msgs = await fetchAllMessagesFromChat(chat);
-      combined.push(...msgs);
-    }
-    // sort combined chronologically
-    combined.sort((a,b)=> (Number(a.ts)||0) - (Number(b.ts)||0));
-    await persistFullAndRecompute(combined);
+    log(`[CLIENT] Fetching all chats...`);
+    const chats = await client.getChats();
+    log(`[CLIENT] Got ${chats.length} chats, filtering by prefix...`);
+    const match = chats.filter(c => ((c.name || c.formattedTitle || '')).startsWith(prefix))[0];
+    const msgs = await fetchAllMessagesFromChat(match);
+    await persistFullAndRecompute(msgs);
     res.json({ status: 'ok', scanned: chats.length });
   } catch (e) {
     logError('scanAll error', e && e.stack || e);
