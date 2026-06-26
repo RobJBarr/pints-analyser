@@ -1,7 +1,1197 @@
 {
-  "updated_at": "2026-06-26T19:05:53.201Z",
-  "totals": {},
-  "events": [],
-  "hatties": {},
+  "updated_at": "2026-06-26T19:08:26.189Z",
+  "totals": {
+    "Tom Swithenbank": 39,
+    "Dominic Richards": 15,
+    "Thomas Bebbington": 11,
+    "Rob Barr": 12,
+    "Jack Waller": 7,
+    "Joe Clarke": 27,
+    "Wes Oultram": 1,
+    "Ed Bruckshaw": 1,
+    "Amie-Leigh Williams": 15,
+    "Harry Tilston": 3,
+    "Leo Seal": 3,
+    "Tom Ravenscroft": 2,
+    "James Smith": 3
+  },
+  "events": [
+    {
+      "id": "false_120363411242095628@g.us_3AFDD1D4252C7B769175_277850192113878@lid",
+      "ts": 1781726419,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "1",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A61C6392E590953102B_223462954123378@lid",
+      "ts": 1781726420,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "2",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_ACE8D91547F2EEBC8920D750699581DB_21161320702030@lid",
+      "ts": 1781726457,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "3",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A614545DD06859A16C6_207520018784433@lid",
+      "ts": 1781726469,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "4",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A7F5C3BADADA05BE7DE_276789251305571@lid",
+      "ts": 1781726485,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "5",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AFDC436F9FCDE240602_277850192113878@lid",
+      "ts": 1781728942,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "6",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A056D950EBAE6569CEF_276789251305571@lid",
+      "ts": 1781729449,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "7",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AA2222268BC343F1244_207520018784433@lid",
+      "ts": 1781729582,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "8",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC641727FD6B85035F38F2DFE8FA7135_21161320702030@lid",
+      "ts": 1781729622,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "9",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AD8A8B2C9D84C21BE75_223462954123378@lid",
+      "ts": 1781730420,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "10 we’re moving at Godspeed",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A2B93610B344B6E2DE7_277850192113878@lid",
+      "ts": 1781731603,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "11",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_ACE08E39F841EFAA932BB0D0F5AEAC39_21161320702030@lid",
+      "ts": 1781731829,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "twelve",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A90BA6B812A18E8D4A7_223462954123378@lid",
+      "ts": 1781732275,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "13",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A897FE152FDDF2B7FFB_447530870601@c.us",
+      "ts": 1781732298,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "Great age (14)",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AB3DC72EBC45E972663_48614768406724@lid",
+      "ts": 1781732554,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "15",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ACCC7CBA865C7FB7772_276789251305571@lid",
+      "ts": 1781732790,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "16",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC0AA37C30F661AF87F_277850192113878@lid",
+      "ts": 1781733926,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "17",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AE84D410281FAF0C4C0_223462954123378@lid",
+      "ts": 1781734088,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "18",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A58F3868A0429EB64A0_207520018784433@lid",
+      "ts": 1781801180,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "19",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3ADF3734B9FD6F0393C4_207520018784433@lid",
+      "ts": 1781803278,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "20",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ABFEE9C5D1C8A4DF7C7_17703989448958@lid",
+      "ts": 1781803707,
+      "sender": "Wes Oultram",
+      "count": 1,
+      "message": "",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A71118EDBA4B37B112C_277850192113878@lid",
+      "ts": 1781803838,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "22",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A80C0B066C8B7DEAB91_277850192113878@lid",
+      "ts": 1781805017,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "23",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A2CBFCE4728F50CA6DF_214134301929616@lid",
+      "ts": 1781805086,
+      "sender": "Ed Bruckshaw",
+      "count": 1,
+      "message": "",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AAD1F52E03FB5B2877B_277850192113878@lid",
+      "ts": 1781806258,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "25",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A25414DFCA6EE11C606_170059364331768@lid",
+      "ts": 1781819066,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "26",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A4E120ED4E21514A9A7_277850192113878@lid",
+      "ts": 1781877766,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "27",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A8CA8E09019BB9E380E_170059364331768@lid",
+      "ts": 1781879249,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "28",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A921C0A5A9FD36193F4_170059364331768@lid",
+      "ts": 1781880886,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "29",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AEB92CC5306FEA09447_277850192113878@lid",
+      "ts": 1781882337,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "30",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AEF02A1888C06D3F06F_277850192113878@lid",
+      "ts": 1781883248,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "31",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AD42F7FBDAE0687EB43_277850192113878@lid",
+      "ts": 1781883954,
+      "sender": "Tom Swithenbank",
+      "count": 2,
+      "message": "32",
+      "away_goal": false,
+      "hattrick": true
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A4324D2BBFA25AC8394_277850192113878@lid",
+      "ts": 1781885567,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "33",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AADB1FF08D7C3BA205F_170059364331768@lid",
+      "ts": 1781886998,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "34",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AF4F76758240F1A57E1_277850192113878@lid",
+      "ts": 1781887033,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "35",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A349D4DA208972E5AE6_277850192113878@lid",
+      "ts": 1781888368,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "37",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A1CA2CED0DB9A8F4942_170059364331768@lid",
+      "ts": 1781888934,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "38",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A35588BFFCDF0568A8B_170059364331768@lid",
+      "ts": 1781891585,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "39",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A72A134A25C6FDDE326_170059364331768@lid",
+      "ts": 1781892616,
+      "sender": "Amie-Leigh Williams",
+      "count": 2,
+      "message": "41",
+      "away_goal": false,
+      "hattrick": true
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AE430577635F6F3221A_170059364331768@lid",
+      "ts": 1781896057,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "42",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AEDC50272AEBF836DFE_170059364331768@lid",
+      "ts": 1781898455,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "43",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AEBAD53FD7EB1E70268_277850192113878@lid",
+      "ts": 1781899169,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "44",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A7DD8F1F1D11DBBB652_277850192113878@lid",
+      "ts": 1781965066,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "45",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A8535E2C43D2FE1231F_223462954123378@lid",
+      "ts": 1781965146,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "46 sahur",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC3E2C61DB45F7B10EA04E223840F9D3_21161320702030@lid",
+      "ts": 1781965170,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "47",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A3C94C2134B0671B55A_277850192113878@lid",
+      "ts": 1781967373,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "48",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_ACA1E1FA005B5CE413B08C43DC0CF7E7_21161320702030@lid",
+      "ts": 1781967468,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "49",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A1C2A140FCAEE3A7932_223462954123378@lid",
+      "ts": 1781967498,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "Fiftysina pintantina (50)",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AF51F688F9A98946A7A_277850192113878@lid",
+      "ts": 1781969608,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "51",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_ACE46101E9472F2D64333C1703F2757C_21161320702030@lid",
+      "ts": 1781969708,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "52",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A29CCCA4178F7BC1288_223462954123378@lid",
+      "ts": 1781970595,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "53",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AEC7C758957A940F32C_277850192113878@lid",
+      "ts": 1781972159,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "54",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A9A208DA5C1206AFD0C_223462954123378@lid",
+      "ts": 1781972591,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "55",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC73527360864F1EBA255A534BDB50FB_21161320702030@lid",
+      "ts": 1781973049,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "56",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC07B966B913DEB0850_48614768406724@lid",
+      "ts": 1781975264,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "57 boiiiiii",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A433DB0C9008C5C9CD7_277850192113878@lid",
+      "ts": 1781975813,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "58",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AA53AD7EC83B9207721_223462954123378@lid",
+      "ts": 1781975960,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "59",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC88EA0F1EF672B8AD0386358F17D9B5_21161320702030@lid",
+      "ts": 1781975964,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "60",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A5C646E7B06FF14E3A7_48614768406724@lid",
+      "ts": 1781977444,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "61 😛",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AE7FD6D2EFB9185917E_48614768406724@lid",
+      "ts": 1781978376,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "62 gang",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A036B2BEF3244E26CE0_272116444340299@lid",
+      "ts": 1781978792,
+      "sender": "Harry Tilston",
+      "count": 1,
+      "message": "",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ABEA27F6FFCA2E8658B_277850192113878@lid",
+      "ts": 1781978876,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "64",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A9BEFF977D393125D82_223462954123378@lid",
+      "ts": 1781979917,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "65",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC95181D4729F950B17504056F1FC805_21161320702030@lid",
+      "ts": 1781979953,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "66",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A1FE4FE48B311DFDA9F_48614768406724@lid",
+      "ts": 1781981302,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "6767676767676767",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A040686D16CF829AE9E_272116444340299@lid",
+      "ts": 1781981836,
+      "sender": "Harry Tilston",
+      "count": 1,
+      "message": "68",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A7948933296B54D4667_74844217557181@lid",
+      "ts": 1781981938,
+      "sender": "Leo Seal",
+      "count": 1,
+      "message": "69 waheyyy",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A964068F8A959C0B7FF_170059364331768@lid",
+      "ts": 1781992305,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "70",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ACCC8D805D8F487AF0E_48614768406724@lid",
+      "ts": 1782041614,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "71",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AD46921F7A3C5D2C3A9_48614768406724@lid",
+      "ts": 1782042856,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "72",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A8B5F84C8501777F5C7_48614768406724@lid",
+      "ts": 1782043435,
+      "sender": "Joe Clarke",
+      "count": 2,
+      "message": "73",
+      "away_goal": false,
+      "hattrick": true
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ABBF0C3437A4474C34F_48614768406724@lid",
+      "ts": 1782054978,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "75",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AA7155B968DC693CF78_48614768406724@lid",
+      "ts": 1782057062,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "76",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AAA8A19CCE7D93C493D_48614768406724@lid",
+      "ts": 1782060684,
+      "sender": "Joe Clarke",
+      "count": 2,
+      "message": "78 chuds",
+      "away_goal": false,
+      "hattrick": true
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A46B8F734AC0311F851_170059364331768@lid",
+      "ts": 1782075127,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "79",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A64C28CDD615DE2BE11_170059364331768@lid",
+      "ts": 1782160193,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "80",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A72D58EF2745384058D_170059364331768@lid",
+      "ts": 1782161698,
+      "sender": "Amie-Leigh Williams",
+      "count": 2,
+      "message": "81",
+      "away_goal": false,
+      "hattrick": true
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A675287C49CDE0DB928_48614768406724@lid",
+      "ts": 1782220493,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "83",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A3E665572FCD4D807E6_48614768406724@lid",
+      "ts": 1782223848,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "84",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A8E38E9F165CE3B29B8_277850192113878@lid",
+      "ts": 1782240852,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "85",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC0B3120E247EFE59B78FB5D084785E1_21161320702030@lid",
+      "ts": 1782241221,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "86",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A84C94BF81B29CEF412_223462954123378@lid",
+      "ts": 1782241342,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "87",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A7A631E325AC3FFEF02_236133074079830@lid",
+      "ts": 1782242591,
+      "sender": "Tom Ravenscroft",
+      "count": 1,
+      "message": "88",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC8587A1AE8CC73B79FD8DE3319C0A00_112214744813698@lid",
+      "ts": 1782242618,
+      "sender": "James Smith",
+      "count": 1,
+      "message": "89",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A9115A90C6774BE2CFF_48614768406724@lid",
+      "ts": 1782242719,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "90",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A4A602866CDA099895D_277850192113878@lid",
+      "ts": 1782242910,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "91",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC22D97EF01EACEB4FCEB92BFB522E7A_21161320702030@lid",
+      "ts": 1782243031,
+      "sender": "Thomas Bebbington",
+      "count": 1,
+      "message": "92",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A4841FF9987E569E55E_276789251305571@lid",
+      "ts": 1782243383,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "93",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AE6EC43DFFCCD2A34D7_223462954123378@lid",
+      "ts": 1782243913,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "94",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A93F3FA502B8F3165D6_48614768406724@lid",
+      "ts": 1782245560,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "95",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A71615E84880E0241AC_277850192113878@lid",
+      "ts": 1782245737,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "96",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AF3AEBE38023135B372_276789251305571@lid",
+      "ts": 1782246189,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "97",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A3EFF2E3642B2E2CBF9_223462954123378@lid",
+      "ts": 1782246469,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "98",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A8E33D369E6130588AF_272116444340299@lid",
+      "ts": 1782246496,
+      "sender": "Harry Tilston",
+      "count": 1,
+      "message": "99",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC4B9D2D535CA5C0A62685DAEFA1F87C_112214744813698@lid",
+      "ts": 1782246729,
+      "sender": "James Smith",
+      "count": 1,
+      "message": "100",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A249A7AC1AAB8F4C0DF_236133074079830@lid",
+      "ts": 1782246961,
+      "sender": "Tom Ravenscroft",
+      "count": 1,
+      "message": "101",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A00937FA4735F09DAE6_277850192113878@lid",
+      "ts": 1782247653,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "102",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AB10B8A2A19F1139344_223462954123378@lid",
+      "ts": 1782248330,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "103 England stink",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC92FF2EA3ADB83621F_48614768406724@lid",
+      "ts": 1782248441,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "104",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ACDBA64CFA16F94F9B3_277850192113878@lid",
+      "ts": 1782249639,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "105",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A2507E6EB1FE96D46BB_223462954123378@lid",
+      "ts": 1782249935,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "106",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AF2E0A7314FB30DC78F_48614768406724@lid",
+      "ts": 1782297645,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "107",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_AC83A0AC09A4750B3F3AB1C4E5B0FF68_112214744813698@lid",
+      "ts": 1782301746,
+      "sender": "James Smith",
+      "count": 1,
+      "message": "",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AE1FE62B60CD5DE462A_74844217557181@lid",
+      "ts": 1782319729,
+      "sender": "Leo Seal",
+      "count": 1,
+      "message": "109 - scenic pint submission",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A3C2569C94A4B06A774_48614768406724@lid",
+      "ts": 1782321713,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "110",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AF9E064B7585A6DFEC6_207520018784433@lid",
+      "ts": 1782323852,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "111",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A445C2C9C0C3A2B963E_207520018784433@lid",
+      "ts": 1782325063,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "112",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC6E3190AEB6DEEEDC9_48614768406724@lid",
+      "ts": 1782330362,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "113",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A40280C07BC9D30B46E_277850192113878@lid",
+      "ts": 1782397620,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "114",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AFF1B56D2ACB5D0C988_277850192113878@lid",
+      "ts": 1782398047,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "First one went down quick time 115",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A882E53D44EFFAF5641_74844217557181@lid",
+      "ts": 1782398519,
+      "sender": "Leo Seal",
+      "count": 1,
+      "message": "116",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A5B4775B294A7F325A9_277850192113878@lid",
+      "ts": 1782405201,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "117",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AB2BDE1FA569902AB32_277850192113878@lid",
+      "ts": 1782406160,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "118",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AAD2CFD24AE8DC4ABF7_277850192113878@lid",
+      "ts": 1782406666,
+      "sender": "Tom Swithenbank",
+      "count": 2,
+      "message": "Hatty baby 120",
+      "away_goal": false,
+      "hattrick": true
+    },
+    {
+      "id": "true_120363411242095628@g.us_3AEAF69673CDEDF5312F_207520018784433@lid",
+      "ts": 1782408170,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "121",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A72DA3274BE5C0BB8C1_277850192113878@lid",
+      "ts": 1782408594,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "122",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A28F384FC105140A8FA_207520018784433@lid",
+      "ts": 1782409995,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "123",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A21880CAB1B5FDB085B_207520018784433@lid",
+      "ts": 1782412123,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "124",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A913C54BB84A879528B_207520018784433@lid",
+      "ts": 1782420571,
+      "sender": "Rob Barr",
+      "count": 2,
+      "message": "126",
+      "away_goal": false,
+      "hattrick": true
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC02EB7333903365343_276789251305571@lid",
+      "ts": 1782424378,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "126",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A9D0C2F82AF743CC5CE_276789251305571@lid",
+      "ts": 1782424405,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "127",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A6C48A489DA88629EF2_277850192113878@lid",
+      "ts": 1782486512,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "128",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A31F2CEA5377AD9E4FE_277850192113878@lid",
+      "ts": 1782486998,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "129",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A56C604EC417958254D_277850192113878@lid",
+      "ts": 1782487936,
+      "sender": "Tom Swithenbank",
+      "count": 2,
+      "message": "",
+      "away_goal": false,
+      "hattrick": true
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A14DE3569EBF286066D_48614768406724@lid",
+      "ts": 1782488026,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "132",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A5CC6A05629DF751A62_48614768406724@lid",
+      "ts": 1782489786,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "133",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AD4797693B3C695A704_277850192113878@lid",
+      "ts": 1782490555,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "134",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A47B0BD2C7C3B8A0967_48614768406724@lid",
+      "ts": 1782492252,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "135",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A40DF0F3B934A7B8189_48614768406724@lid",
+      "ts": 1782497210,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "136",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ACBF581CB5302BE28B3_48614768406724@lid",
+      "ts": 1782499765,
+      "sender": "Joe Clarke",
+      "count": 2,
+      "message": "137",
+      "away_goal": false,
+      "hattrick": true
+    }
+  ],
+  "hatties": {
+    "Tom Swithenbank": 3,
+    "Amie-Leigh Williams": 2,
+    "Joe Clarke": 3,
+    "Rob Barr": 1
+  },
   "away_goals": {}
 }
