@@ -254,9 +254,6 @@ async function fetchAllMessagesFromChat(chat){
     
     const cancelled = reactions.some(item => item.aggregateEmoji === "🚫" || item.aggregateEmoji === "❌");
     const away_goal = reactions.some(item => item.aggregateEmoji === '✈' || item.aggregateEmoji === '\u2708');
-    if (text == "20"){
-      console.log("20", m, reactions, cancelled, away_goal);
-    }
     const is_gif = m.isGif;
     return { id, ts, sender, type, text, cancelled, away_goal, is_gif, chatId: (chat.id && chat.id._serialized) || chat.id || null, chatName: chat.name || chat.formattedTitle || null };
    }));
