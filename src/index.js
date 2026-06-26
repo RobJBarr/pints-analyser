@@ -108,7 +108,7 @@ function gitCommitPush(message, files){
   const filesArg = (files && files.length)? files.join(' '): 'pints.json messages.json';
   const cmd = `git add ${filesArg} && (git diff --staged --quiet || (git commit -m "${message}" && git push))`;
   exec(cmd, { cwd: ROOT }, (err, stdout, stderr) => {
-    if (err) logError('git push error:', err.message);
+    if (err) {console.log(err, " ", stdout, " ", stderr);logError('git push error:', err.message);}
     else log('git commit/push done');
   });
 }
