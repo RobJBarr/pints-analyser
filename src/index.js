@@ -85,7 +85,7 @@ function computeTotals(messages){
       totals[senderName] = (totals[senderName]||0) + 1;
     }
   }
-  totals["Tom Swithenbank"] = (totals["Tom Swithenbank"]||0) - 15;
+  totals["Tom Swithenbank"] = (totals["Tom Swithenbank"]||0) - 25;
   log(`[COMPUTE] Found ${imageCount} submissions from ${Object.keys(totals).length} senders, including ${Object.values(hatties).reduce((a,b)=>a+b, 0)} hattricks, and ${Object.values(away_goals).reduce((a,b)=>a+b, 0)} away goals`);
   for (const [sender, count] of Object.entries(totals)) {
     log(`[COMPUTE]   ${sender}: ${count} images, hattricks: ${hatties[sender] || 0}, away goals: ${away_goals[sender] || 0}`);
