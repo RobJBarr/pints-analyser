@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28T00:22:47.717Z",
+  "updated_at": "2026-06-28T00:29:52.149Z",
   "totals": {
     "Dominic Richards": 24,
     "Thomas Bebbington": 11,
@@ -13,7 +13,7 @@
     "Leo Seal": 3,
     "Tom Ravenscroft": 2,
     "James Smith": 3,
-    "Tom Swithenbank": 21,
+    "Tom Swithenbank": 15,
     "Matt Davidson": 1
   },
   "events": [
@@ -684,15 +684,6 @@
       "hattrick": false
     },
     {
-      "id": "false_120363411242095628@g.us_3ACDBA64CFA16F94F9B3_277850192113878@lid",
-      "ts": 1782249639,
-      "sender": "Tom Swithenbank",
-      "count": 1,
-      "message": "105",
-      "away_goal": false,
-      "hattrick": false
-    },
-    {
       "id": "false_120363411242095628@g.us_3A2507E6EB1FE96D46BB_223462954123378@lid",
       "ts": 1782249935,
       "sender": "Dominic Richards",
@@ -765,24 +756,6 @@
       "hattrick": false
     },
     {
-      "id": "false_120363411242095628@g.us_3A40280C07BC9D30B46E_277850192113878@lid",
-      "ts": 1782397620,
-      "sender": "Tom Swithenbank",
-      "count": 1,
-      "message": "114",
-      "away_goal": false,
-      "hattrick": false
-    },
-    {
-      "id": "false_120363411242095628@g.us_3AFF1B56D2ACB5D0C988_277850192113878@lid",
-      "ts": 1782398047,
-      "sender": "Tom Swithenbank",
-      "count": 1,
-      "message": "First one went down quick time 115",
-      "away_goal": false,
-      "hattrick": false
-    },
-    {
       "id": "false_120363411242095628@g.us_3A882E53D44EFFAF5641_74844217557181@lid",
       "ts": 1782398519,
       "sender": "Leo Seal",
@@ -792,31 +765,13 @@
       "hattrick": false
     },
     {
-      "id": "false_120363411242095628@g.us_3A5B4775B294A7F325A9_277850192113878@lid",
-      "ts": 1782405201,
-      "sender": "Tom Swithenbank",
-      "count": 1,
-      "message": "117",
-      "away_goal": false,
-      "hattrick": false
-    },
-    {
-      "id": "false_120363411242095628@g.us_3AB2BDE1FA569902AB32_277850192113878@lid",
-      "ts": 1782406160,
-      "sender": "Tom Swithenbank",
-      "count": 1,
-      "message": "118",
-      "away_goal": false,
-      "hattrick": false
-    },
-    {
       "id": "false_120363411242095628@g.us_3AAD2CFD24AE8DC4ABF7_277850192113878@lid",
       "ts": 1782406666,
       "sender": "Tom Swithenbank",
-      "count": 2,
+      "count": 1,
       "message": "Hatty baby 120",
       "away_goal": false,
-      "hattrick": true
+      "hattrick": false
     },
     {
       "id": "true_120363411242095628@g.us_3AEAF69673CDEDF5312F_207520018784433@lid",
@@ -1344,8 +1299,8 @@
   "hatties": {
     "Amie-Leigh Williams": 4,
     "Joe Clarke": 4,
-    "Tom Swithenbank": 3,
-    "Rob Barr": 1
+    "Rob Barr": 1,
+    "Tom Swithenbank": 2
   },
   "away_goals": {}
 }
