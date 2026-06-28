@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-06-28T00:33:50.783Z",
+  "updated_at": "2026-06-28T00:35:19.050Z",
   "totals": {
     "Dominic Richards": 24,
     "Thomas Bebbington": 11,
-    "Rob Barr": 19,
+    "Rob Barr": 20,
     "Jack Waller": 12,
     "Joe Clarke": 40,
     "Wes Oultram": 2,
@@ -1292,6 +1292,15 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "183",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3ADA186BD39B1A41DE27_207520018784433@lid",
+      "ts": 1782606917,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "What a fall from grace for Tom",
       "away_goal": false,
       "hattrick": false
     }
