@@ -54,7 +54,9 @@ function computeTotals(messages){
   let events = [];
   const hatties = {};
   let imageCount = 0;
+  let tomPen = 25;
   for (let i=0;i<messages.length;i++){
+
     const m = messages[i];
     if (m.type !== 'image') continue;
     if (m.is_gif) continue; 
@@ -63,6 +65,7 @@ function computeTotals(messages){
     // Resolve sender ID to name using cache, fallback to ID
     const senderId = m.sender || 'unknown';
     const senderName = contactNameCache[senderId] || senderId;
+    if (tomPen > 0 && senderName === "Tom Swithenbank") {tomPen -= 1; continue;}
     if (m.away_goal) {console.log("AWAY GOAL", m, senderName);}
     events.push({ id: m.id, ts: m.ts, sender: senderName, count: 1, reactions: m.reactions, message: m.text, away_goal: m.away_goal});
   }
@@ -85,7 +88,6 @@ function computeTotals(messages){
       totals[senderName] = (totals[senderName]||0) + 1;
     }
   }
-  totals["Tom Swithenbank"] = (totals["Tom Swithenbank"]||0) - 25;
   log(`[COMPUTE] Found ${imageCount} submissions from ${Object.keys(totals).length} senders, including ${Object.values(hatties).reduce((a,b)=>a+b, 0)} hattricks, and ${Object.values(away_goals).reduce((a,b)=>a+b, 0)} away goals`);
   for (const [sender, count] of Object.entries(totals)) {
     log(`[COMPUTE]   ${sender}: ${count} images, hattricks: ${hatties[sender] || 0}, away goals: ${away_goals[sender] || 0}`);
