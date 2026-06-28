@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28T15:33:03.067Z",
+  "updated_at": "2026-06-28T19:57:17.741Z",
   "totals": {
     "Dominic Richards": 24,
     "Thomas Bebbington": 11,
@@ -8,7 +8,7 @@
     "Joe Clarke": 40,
     "Wes Oultram": 2,
     "Ed Bruckshaw": 1,
-    "Amie-Leigh Williams": 17,
+    "Amie-Leigh Williams": 18,
     "Harry Tilston": 3,
     "Leo Seal": 3,
     "Tom Ravenscroft": 3,
@@ -1339,6 +1339,15 @@
       "message": "189",
       "away_goal": false,
       "hattrick": true
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC3CF826BE7E59C9678_170059364331768@lid",
+      "ts": 1782676635,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "190",
+      "away_goal": false,
+      "hattrick": false
     }
   ],
   "hatties": {
