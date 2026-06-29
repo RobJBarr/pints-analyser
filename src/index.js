@@ -54,7 +54,6 @@ function computeTotals(messages){
   let events = [];
   const hatties = {};
   let imageCount = 0;
-  let tomPen = 30;
   for (let i=0;i<messages.length;i++){
 
     const m = messages[i];
@@ -65,7 +64,6 @@ function computeTotals(messages){
     // Resolve sender ID to name using cache, fallback to ID
     const senderId = m.sender || 'unknown';
     const senderName = contactNameCache[senderId] || senderId;
-    if (tomPen > 0 && senderName === "Tom Swithenbank") {tomPen--; continue;}
     if (m.away_goal) {console.log("AWAY GOAL", m, senderName);}
     events.push({ id: m.id, ts: m.ts, sender: senderName, count: 1, reactions: m.reactions, message: m.text, away_goal: m.away_goal});
   }
