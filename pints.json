@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T17:07:13.763Z",
+  "updated_at": "2026-07-03T17:11:59.365Z",
   "totals": {
     "Tom Swithenbank": 66,
     "Dominic Richards": 29,
@@ -7,7 +7,7 @@
     "Rob Barr": 23,
     "Jack Waller": 13,
     "Joe Clarke": 46,
-    "Wes Oultram": 2,
+    "Wes Oultram": 3,
     "Ed Bruckshaw": 3,
     "Amie-Leigh Williams": 18,
     "Harry Tilston": 3,
@@ -1906,6 +1906,15 @@
       "message": "225",
       "away_goal": false,
       "hattrick": true
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ABC3A80A1FEC87586DD_17703989448958@lid",
+      "ts": 1783098716,
+      "sender": "Wes Oultram",
+      "count": 1,
+      "message": "",
+      "away_goal": false,
+      "hattrick": false
     }
   ],
   "hatties": {
