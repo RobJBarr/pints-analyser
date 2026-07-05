@@ -57,7 +57,7 @@ function computeTotals(messages){
   for (let i=0;i<messages.length;i++){
 
     const m = messages[i];
-    if (m.type !== 'image') continue;
+    if (m.type !== 'image' && m.type !=="video") continue;
     if (m.is_gif) continue; 
     if (m.cancelled) continue;
     
@@ -73,6 +73,7 @@ function computeTotals(messages){
     const senderName = event.sender;
     imageCount++;
     totals[senderName] = (totals[senderName]||0) + 1;
+    
     if (event.hattrick) {
       imageCount++;
       event.count += 1; // count the hattrick bonus
@@ -89,6 +90,11 @@ function computeTotals(messages){
   log(`[COMPUTE] Found ${imageCount} submissions from ${Object.keys(totals).length} senders, including ${Object.values(hatties).reduce((a,b)=>a+b, 0)} hattricks, and ${Object.values(away_goals).reduce((a,b)=>a+b, 0)} away goals`);
   for (const [sender, count] of Object.entries(totals)) {
     log(`[COMPUTE]   ${sender}: ${count} images, hattricks: ${hatties[sender] || 0}, away goals: ${away_goals[sender] || 0}`);
+  }
+  const pens = {"Joe Clarke": 10};
+  for (const[abuser, pen] of Object.entries(pens)){
+  	totals[abuser] -= pen;
+	imageCount -= pen;
   }
 
   return {events, totals, hatties, away_goals};
@@ -253,6 +259,7 @@ async function fetchAllMessagesFromChat(chat){
     const reactions = await m.getReactions() || [];
     
     const cancelled = reactions.some(item => item.aggregateEmoji === "🚫" || item.aggregateEmoji === "❌");
+    if (cancelled){ console.log("Cancelled: ", text);}
     const away_goal = reactions.some(item => item.aggregateEmoji === '✈' || item.aggregateEmoji === '\u2708');
     const is_gif = m.isGif;
     return { id, ts, sender, type, text, cancelled, away_goal, is_gif, chatId: (chat.id && chat.id._serialized) || chat.id || null, chatName: chat.name || chat.formattedTitle || null };
