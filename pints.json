@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-07-11T20:33:22.863Z",
+  "updated_at": "2026-07-11T20:38:00.274Z",
   "totals": {
     "Tom Swithenbank": 106,
     "Dominic Richards": 48,
     "Thomas Bebbington": 16,
-    "Rob Barr": 46,
+    "Rob Barr": 47,
     "Jack Waller": 17,
     "Joe Clarke": 57,
     "Wes Oultram": 3,
-    "Ed Bruckshaw": 7,
+    "Ed Bruckshaw": 8,
     "Amie-Leigh Williams": 23,
     "Harry Tilston": 3,
     "Leo Seal": 6,
@@ -2874,8 +2874,17 @@
       "id": "true_120363411242095628@g.us_3ABBF6BB43DADEC3E96F_207520018784433@lid",
       "ts": 1783802000,
       "sender": "Rob Barr",
-      "count": 1,
+      "count": 2,
       "message": "344",
+      "away_goal": true,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AD374EE5A5D1AD2BB77_214134301929616@lid",
+      "ts": 1783802276,
+      "sender": "Ed Bruckshaw",
+      "count": 1,
+      "message": "",
       "away_goal": false,
       "hattrick": false
     }
@@ -2888,6 +2897,6 @@
     "Jack Waller": 1
   },
   "away_goals": {
-    "Rob Barr": 9
+    "Rob Barr": 10
   }
 }
