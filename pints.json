@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T15:16:28.873Z",
+  "updated_at": "2026-07-11T15:20:14.596Z",
   "totals": {
     "Tom Swithenbank": 99,
     "Dominic Richards": 42,
@@ -11,7 +11,7 @@
     "Ed Bruckshaw": 3,
     "Amie-Leigh Williams": 23,
     "Harry Tilston": 3,
-    "Leo Seal": 5,
+    "Leo Seal": 6,
     "Tom Ravenscroft": 5,
     "James Smith": 4,
     "Matt Davidson": 2
@@ -2651,6 +2651,15 @@
       "sender": "Thomas Bebbington",
       "count": 1,
       "message": "316",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC574DAFEF2C2BB3360_74844217557181@lid",
+      "ts": 1783783210,
+      "sender": "Leo Seal",
+      "count": 1,
+      "message": "317",
       "away_goal": false,
       "hattrick": false
     }
