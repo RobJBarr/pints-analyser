@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-07-15T20:25:28.149Z",
+  "updated_at": "2026-07-15T20:28:52.119Z",
   "totals": {
-    "Tom Swithenbank": 126,
+    "Tom Swithenbank": 127,
     "Dominic Richards": 57,
     "Thomas Bebbington": 21,
     "Rob Barr": 78,
@@ -3497,6 +3497,15 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "429",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A2EF0F279FAD27C50D6_277850192113878@lid",
+      "ts": 1784147327,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "67",
       "away_goal": false,
       "hattrick": false
     }
