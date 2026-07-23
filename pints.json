@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T16:08:38.568Z",
+  "updated_at": "2026-07-23T16:09:23.491Z",
   "totals": {
     "Tom Swithenbank": 152,
     "Dominic Richards": 64,
@@ -3942,11 +3942,11 @@
       "hattrick": false
     },
     {
-      "id": "false_120363411242095628@g.us_3ACFFF24A4DD345AD405_272116444340299@lid",
-      "ts": 1784822913,
+      "id": "false_120363411242095628@g.us_3A40A9DF368E88FAC980_272116444340299@lid",
+      "ts": 1784822958,
       "sender": "Harry Tilston",
       "count": 1,
-      "message": "",
+      "message": "487",
       "away_goal": false,
       "hattrick": false
     }
