@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-01T16:57:28.279Z",
+  "updated_at": "2026-08-01T17:06:37.047Z",
   "totals": {
     "Tom Swithenbank": 199,
-    "Dominic Richards": 74,
+    "Dominic Richards": 75,
     "Thomas Bebbington": 23,
     "Rob Barr": 101,
     "Jack Waller": 22,
@@ -4811,6 +4811,15 @@
       "sender": "Ed Bruckshaw",
       "count": 1,
       "message": "594",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AC9EE978536B2B4798C_223462954123378@lid",
+      "ts": 1785603991,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "596 Luke combs baby",
       "away_goal": false,
       "hattrick": false
     }
