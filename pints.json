@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T17:29:34.128Z",
+  "updated_at": "2026-08-01T17:33:01.820Z",
   "totals": {
     "Tom Swithenbank": 200,
     "Dominic Richards": 75,
@@ -8,7 +8,7 @@
     "Jack Waller": 22,
     "Joe Clarke": 75,
     "Wes Oultram": 4,
-    "Ed Bruckshaw": 19,
+    "Ed Bruckshaw": 20,
     "Amie-Leigh Williams": 24,
     "Harry Tilston": 4,
     "Leo Seal": 9,
@@ -4829,6 +4829,15 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "596",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AD33EACAEC843813C9A_214134301929616@lid",
+      "ts": 1785605576,
+      "sender": "Ed Bruckshaw",
+      "count": 1,
+      "message": "597",
       "away_goal": false,
       "hattrick": false
     }
