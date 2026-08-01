@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-08-01T17:07:19.637Z",
+  "updated_at": "2026-08-01T17:09:39.925Z",
   "totals": {
-    "Tom Swithenbank": 199,
+    "Tom Swithenbank": 200,
     "Dominic Richards": 75,
     "Thomas Bebbington": 23,
     "Rob Barr": 101,
@@ -4820,6 +4820,15 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "596 Luke combs baby",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ADDC920775A96DED808_277850192113878@lid",
+      "ts": 1785604174,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "596",
       "away_goal": false,
       "hattrick": false
     }
