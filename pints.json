@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-01T19:04:07.710Z",
+  "updated_at": "2026-08-01T19:10:41.275Z",
   "totals": {
     "Tom Swithenbank": 201,
-    "Dominic Richards": 77,
+    "Dominic Richards": 78,
     "Thomas Bebbington": 23,
     "Rob Barr": 101,
     "Jack Waller": 22,
@@ -4891,7 +4891,16 @@
       "ts": 1785611040,
       "sender": "Leo Seal",
       "count": 1,
-      "message": "602",
+      "message": "603",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A39E65C5F57ED57846A_223462954123378@lid",
+      "ts": 1785611435,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "602 got given Camden lager not pale an fuming",
       "away_goal": false,
       "hattrick": false
     }
