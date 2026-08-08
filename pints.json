@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-08T18:39:21.179Z",
+  "updated_at": "2026-08-08T18:41:09.650Z",
   "totals": {
     "Tom Swithenbank": 240,
-    "Dominic Richards": 86,
+    "Dominic Richards": 87,
     "Thomas Bebbington": 30,
     "Rob Barr": 102,
     "Jack Waller": 24,
@@ -5504,6 +5504,15 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "677",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AA489053A538D74BDC5_223462954123378@lid",
+      "ts": 1786214463,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "",
       "away_goal": false,
       "hattrick": false
     }
