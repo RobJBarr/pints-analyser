@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T12:00:32.462Z",
+  "updated_at": "2026-08-23T12:26:37.676Z",
   "totals": {
     "Tom Swithenbank": 258,
     "Dominic Richards": 98,
@@ -11,7 +11,7 @@
     "Ed Bruckshaw": 21,
     "Amie-Leigh Williams": 32,
     "Harry Tilston": 4,
-    "Leo Seal": 14,
+    "Leo Seal": 15,
     "Tom Ravenscroft": 12,
     "James Smith": 5,
     "Matt Davidson": 43
@@ -6215,6 +6215,15 @@
       "sender": "Jack Waller",
       "count": 1,
       "message": "760",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AADB3CB8BD24B825AD1_74844217557181@lid",
+      "ts": 1787487991,
+      "sender": "Leo Seal",
+      "count": 1,
+      "message": "763",
       "away_goal": false,
       "hattrick": false
     }
