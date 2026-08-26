@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-08-26T17:25:43.823Z",
+  "updated_at": "2026-08-26T18:14:37.603Z",
   "totals": {
     "Tom Swithenbank": 258,
     "Dominic Richards": 98,
     "Thomas Bebbington": 38,
-    "Rob Barr": 116,
+    "Rob Barr": 118,
     "Jack Waller": 28,
     "Joe Clarke": 90,
     "Wes Oultram": 5,
@@ -6244,13 +6244,22 @@
       "message": "765",
       "away_goal": false,
       "hattrick": false
+    },
+    {
+      "id": "true_120363411242095628@g.us_3A82ED50B354A7B61A27_207520018784433@lid",
+      "ts": 1787768073,
+      "sender": "Rob Barr",
+      "count": 2,
+      "message": "767",
+      "away_goal": false,
+      "hattrick": true
     }
   ],
   "hatties": {
     "Tom Swithenbank": 35,
     "Amie-Leigh Williams": 4,
     "Joe Clarke": 6,
-    "Rob Barr": 8,
+    "Rob Barr": 9,
     "Jack Waller": 1,
     "Tom Ravenscroft": 1,
     "Matt Davidson": 4,
