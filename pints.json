@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-29T17:26:14.400Z",
+  "updated_at": "2026-08-29T17:36:29.664Z",
   "totals": {
-    "Tom Swithenbank": 268,
-    "Dominic Richards": 100,
+    "Tom Swithenbank": 269,
+    "Dominic Richards": 99,
     "Thomas Bebbington": 38,
     "Rob Barr": 120,
     "Jack Waller": 28,
@@ -6417,11 +6417,11 @@
       "hattrick": false
     },
     {
-      "id": "false_120363411242095628@g.us_3AEF41B1B974EEF45BB7_223462954123378@lid",
-      "ts": 1788024368,
-      "sender": "Dominic Richards",
+      "id": "false_120363411242095628@g.us_3AC8930160CDFF17821D_277850192113878@lid",
+      "ts": 1788024983,
+      "sender": "Tom Swithenbank",
       "count": 1,
-      "message": "Just want my pints to feel included 🥲",
+      "message": "788",
       "away_goal": false,
       "hattrick": false
     }
