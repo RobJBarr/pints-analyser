@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-29T16:11:47.979Z",
+  "updated_at": "2026-08-29T16:33:47.475Z",
   "totals": {
     "Tom Swithenbank": 268,
-    "Dominic Richards": 99,
+    "Dominic Richards": 100,
     "Thomas Bebbington": 38,
     "Rob Barr": 120,
     "Jack Waller": 28,
@@ -6413,6 +6413,15 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "787",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A33B03E46232C2F5244_223462954123378@lid",
+      "ts": 1788021221,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "Nitrosurge is such a great invention bro",
       "away_goal": false,
       "hattrick": false
     }
