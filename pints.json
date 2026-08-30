@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T18:05:07.757Z",
+  "updated_at": "2026-08-30T18:09:29.168Z",
   "totals": {
     "Tom Swithenbank": 277,
     "Dominic Richards": 110,
@@ -14,7 +14,7 @@
     "Leo Seal": 16,
     "Tom Ravenscroft": 12,
     "James Smith": 5,
-    "Matt Davidson": 56
+    "Matt Davidson": 57
   },
   "events": [
     {
@@ -6728,6 +6728,15 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "822",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AB399039885E663EF1D_145693897449603@lid",
+      "ts": 1788113362,
+      "sender": "Matt Davidson",
+      "count": 1,
+      "message": "823",
       "away_goal": false,
       "hattrick": false
     }
