@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-08-30T18:38:24.432Z",
+  "updated_at": "2026-08-30T19:09:26.471Z",
   "totals": {
-    "Tom Swithenbank": 278,
-    "Dominic Richards": 112,
+    "Tom Swithenbank": 279,
+    "Dominic Richards": 111,
     "Thomas Bebbington": 38,
     "Rob Barr": 120,
     "Jack Waller": 28,
@@ -6750,20 +6750,20 @@
       "hattrick": false
     },
     {
-      "id": "false_120363411242095628@g.us_3AA79EB8E937F531C462_223462954123378@lid",
-      "ts": 1788115092,
-      "sender": "Dominic Richards",
-      "count": 1,
-      "message": "CHRIS FUCKIN JERICHO",
-      "away_goal": false,
-      "hattrick": false
-    },
-    {
       "id": "false_120363411242095628@g.us_3A9C1986BBDD074FD232_223462954123378@lid",
       "ts": 1788115096,
       "sender": "Dominic Richards",
       "count": 1,
       "message": "824",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A3640EDCAB9F4520ED9_277850192113878@lid",
+      "ts": 1788116960,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "825",
       "away_goal": false,
       "hattrick": false
     }
