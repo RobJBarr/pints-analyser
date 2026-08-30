@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T19:14:17.358Z",
+  "updated_at": "2026-08-30T19:35:12.881Z",
   "totals": {
     "Tom Swithenbank": 279,
     "Dominic Richards": 112,
@@ -6768,11 +6768,11 @@
       "hattrick": false
     },
     {
-      "id": "false_120363411242095628@g.us_3AF87902D9082AA5AEE9_223462954123378@lid",
-      "ts": 1788117251,
+      "id": "false_120363411242095628@g.us_3A3878DEDC8FA08692BA_223462954123378@lid",
+      "ts": 1788118506,
       "sender": "Dominic Richards",
       "count": 1,
-      "message": "",
+      "message": "826",
       "away_goal": false,
       "hattrick": false
     }
