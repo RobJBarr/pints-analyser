@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-04T20:36:39.201Z",
+  "updated_at": "2026-09-04T20:37:39.650Z",
   "totals": {
     "Tom Swithenbank": 306,
     "Dominic Richards": 113,
     "Thomas Bebbington": 38,
     "Rob Barr": 121,
     "Jack Waller": 28,
-    "Joe Clarke": 99,
+    "Joe Clarke": 100,
     "Wes Oultram": 5,
     "Ed Bruckshaw": 22,
     "Amie-Leigh Williams": 35,
@@ -7159,7 +7159,16 @@
       "ts": 1788554190,
       "sender": "Tom Ravenscroft",
       "count": 1,
-      "message": "886",
+      "message": "887",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A87CF1EAE623504FB59_48614768406724@lid",
+      "ts": 1788554253,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "888",
       "away_goal": false,
       "hattrick": false
     }
