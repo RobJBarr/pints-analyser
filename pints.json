@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-05T19:07:48.359Z",
+  "updated_at": "2026-09-05T19:08:34.026Z",
   "totals": {
     "Tom Swithenbank": 315,
     "Dominic Richards": 123,
     "Thomas Bebbington": 43,
-    "Rob Barr": 122,
+    "Rob Barr": 121,
     "Jack Waller": 28,
-    "Joe Clarke": 100,
+    "Joe Clarke": 101,
     "Wes Oultram": 5,
     "Ed Bruckshaw": 25,
     "Amie-Leigh Williams": 35,
@@ -7497,11 +7497,11 @@
       "hattrick": false
     },
     {
-      "id": "true_120363411242095628@g.us_4AFA746A95E8803A6199_207520018784433@lid",
-      "ts": 1788635264,
-      "sender": "Rob Barr",
+      "id": "false_120363411242095628@g.us_3AF77A353DC4366B7913_48614768406724@lid",
+      "ts": 1788635307,
+      "sender": "Joe Clarke",
       "count": 1,
-      "message": "Not a funny one, pic just goes hard",
+      "message": "930",
       "away_goal": false,
       "hattrick": false
     }
