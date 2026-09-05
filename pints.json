@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-05T15:24:48.882Z",
+  "updated_at": "2026-09-05T15:25:06.798Z",
   "totals": {
-    "Tom Swithenbank": 308,
+    "Tom Swithenbank": 309,
     "Dominic Richards": 115,
     "Thomas Bebbington": 40,
     "Rob Barr": 121,
@@ -11,7 +11,7 @@
     "Ed Bruckshaw": 22,
     "Amie-Leigh Williams": 35,
     "Harry Tilston": 4,
-    "Leo Seal": 49,
+    "Leo Seal": 50,
     "Tom Ravenscroft": 14,
     "James Smith": 6,
     "Matt Davidson": 60
@@ -7293,8 +7293,17 @@
       "id": "false_120363411242095628@g.us_3A14A49DFE5B3E48C41B_74844217557181@lid",
       "ts": 1788621882,
       "sender": "Leo Seal",
-      "count": 1,
+      "count": 2,
       "message": "908",
+      "away_goal": true,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AD38DA472DE8B7498ED_277850192113878@lid",
+      "ts": 1788621899,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "909",
       "away_goal": false,
       "hattrick": false
     }
@@ -7313,6 +7322,6 @@
   },
   "away_goals": {
     "Rob Barr": 22,
-    "Leo Seal": 14
+    "Leo Seal": 15
   }
 }
