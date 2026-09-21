@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-21T18:15:08.303Z",
+  "updated_at": "2026-09-21T19:51:26.435Z",
   "totals": {
     "Tom Swithenbank": 362,
     "Dominic Richards": 138,
     "Thomas Bebbington": 52,
     "Rob Barr": 141,
-    "Jack Waller": 45,
+    "Jack Waller": 46,
     "Joe Clarke": 128,
     "Wes Oultram": 5,
     "Ed Bruckshaw": 35,
@@ -9059,6 +9059,15 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "1122",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3AE1AD059C51BAF165C7_276789251305571@lid",
+      "ts": 1790020274,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "1123",
       "away_goal": false,
       "hattrick": false
     }
