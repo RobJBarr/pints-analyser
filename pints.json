@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-23T12:53:48.709Z",
+  "updated_at": "2026-09-23T14:05:18.193Z",
   "totals": {
-    "Tom Swithenbank": 362,
+    "Tom Swithenbank": 363,
     "Dominic Richards": 138,
     "Thomas Bebbington": 52,
     "Rob Barr": 141,
-    "Jack Waller": 53,
+    "Jack Waller": 54,
     "Joe Clarke": 128,
     "Wes Oultram": 5,
     "Ed Bruckshaw": 35,
@@ -9102,8 +9102,17 @@
       "id": "false_120363411242095628@g.us_3A4E47563D134BB09201_276789251305571@lid",
       "ts": 1790168020,
       "sender": "Jack Waller",
-      "count": 1,
+      "count": 2,
       "message": "1133",
+      "away_goal": true,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A11235009B635C6751A_277850192113878@lid",
+      "ts": 1790172304,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "First ever guiness in ireland",
       "away_goal": false,
       "hattrick": false
     }
@@ -9124,6 +9133,6 @@
     "Rob Barr": 24,
     "Leo Seal": 21,
     "Amie-Leigh Williams": 1,
-    "Jack Waller": 3
+    "Jack Waller": 4
   }
 }
