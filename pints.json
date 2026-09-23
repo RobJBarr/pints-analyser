@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-23T14:32:11.509Z",
+  "updated_at": "2026-09-23T14:39:01.650Z",
   "totals": {
-    "Tom Swithenbank": 364,
+    "Tom Swithenbank": 365,
     "Dominic Richards": 138,
     "Thomas Bebbington": 52,
     "Rob Barr": 141,
@@ -9114,6 +9114,15 @@
       "count": 2,
       "message": "First ever guiness in ireland",
       "away_goal": true,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A773A1E4C92A48B3474_277850192113878@lid",
+      "ts": 1790174333,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "1135",
+      "away_goal": false,
       "hattrick": false
     }
   ],
