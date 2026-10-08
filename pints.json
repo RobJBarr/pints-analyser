@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-10-08T20:33:58.955Z",
+  "updated_at": "2026-10-08T20:34:49.446Z",
   "totals": {
     "Tom Swithenbank": 397,
     "Dominic Richards": 144,
     "Thomas Bebbington": 52,
     "Rob Barr": 143,
-    "Jack Waller": 61,
+    "Jack Waller": 62,
     "Joe Clarke": 147,
     "Wes Oultram": 5,
     "Ed Bruckshaw": 38,
-    "Amie-Leigh Williams": 103,
+    "Amie-Leigh Williams": 104,
     "Harry Tilston": 5,
     "Leo Seal": 70,
     "Tom Ravenscroft": 25,
@@ -10047,8 +10047,17 @@
       "id": "false_120363411242095628@g.us_3A1334749CA27D919BCF_170059364331768@lid",
       "ts": 1791491630,
       "sender": "Amie-Leigh Williams",
-      "count": 1,
+      "count": 2,
       "message": "1271",
+      "away_goal": true,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A7D0E044DA7DAF5ADBB_276789251305571@lid",
+      "ts": 1791491681,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "1272",
       "away_goal": false,
       "hattrick": false
     }
@@ -10068,7 +10077,7 @@
   "away_goals": {
     "Rob Barr": 24,
     "Leo Seal": 21,
-    "Amie-Leigh Williams": 12,
+    "Amie-Leigh Williams": 13,
     "Jack Waller": 4,
     "Tom Swithenbank": 3
   }
