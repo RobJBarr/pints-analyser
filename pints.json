@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T19:15:08.731Z",
+  "updated_at": "2026-10-25T19:16:08.902Z",
   "totals": {
     "Tom Swithenbank": 462,
     "Dominic Richards": 181,
@@ -8,7 +8,7 @@
     "Jack Waller": 68,
     "Joe Clarke": 181,
     "Wes Oultram": 5,
-    "Ed Bruckshaw": 44,
+    "Ed Bruckshaw": 46,
     "Amie-Leigh Williams": 147,
     "Harry Tilston": 5,
     "Leo Seal": 72,
@@ -11599,6 +11599,15 @@
       "message": "1482",
       "away_goal": false,
       "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3ABE7FB1C93FFB390AC8_214134301929616@lid",
+      "ts": 1792955759,
+      "sender": "Ed Bruckshaw",
+      "count": 2,
+      "message": "",
+      "away_goal": false,
+      "hattrick": true
     }
   ],
   "hatties": {
@@ -11611,7 +11620,8 @@
     "Matt Davidson": 5,
     "Thomas Bebbington": 1,
     "Dominic Richards": 6,
-    "Leo Seal": 4
+    "Leo Seal": 4,
+    "Ed Bruckshaw": 1
   },
   "away_goals": {
     "Rob Barr": 24,
