@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T20:37:51.073Z",
+  "updated_at": "2026-10-28T20:38:00.013Z",
   "totals": {
     "Tom Swithenbank": 468,
     "Dominic Richards": 182,
@@ -14,7 +14,8 @@
     "Leo Seal": 72,
     "Tom Ravenscroft": 25,
     "James Smith": 7,
-    "Matt Davidson": 77
+    "Matt Davidson": 77,
+    "Luke Southerton": 1
   },
   "events": [
     {
@@ -11741,6 +11742,15 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "1500",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A3EADBADA7C582FC4FE_167727247429877@lid",
+      "ts": 1793219421,
+      "sender": "Luke Southerton",
+      "count": 1,
+      "message": "",
       "away_goal": false,
       "hattrick": false
     }
