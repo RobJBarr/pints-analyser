@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-29T08:48:39.659Z",
+  "updated_at": "2026-10-29T08:51:15.785Z",
   "totals": {
     "Tom Swithenbank": 468,
     "Dominic Richards": 183,
@@ -12,7 +12,7 @@
     "Amie-Leigh Williams": 147,
     "Harry Tilston": 5,
     "Leo Seal": 72,
-    "Tom Ravenscroft": 26,
+    "Tom Ravenscroft": 27,
     "James Smith": 7,
     "Matt Davidson": 77
   },
@@ -11759,6 +11759,15 @@
       "sender": "Tom Ravenscroft",
       "count": 1,
       "message": "Airport pints",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363411242095628@g.us_3A721FBA8256D404EA17_236133074079830@lid",
+      "ts": 1793263865,
+      "sender": "Tom Ravenscroft",
+      "count": 1,
+      "message": "",
       "away_goal": false,
       "hattrick": false
     }
