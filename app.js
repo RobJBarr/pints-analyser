@@ -179,13 +179,16 @@ function setupRace(data) {
 
 async function load() {
   try {
-    const r = await fetch(`pints.json?t=${Date.now()}`, {cache: 'no-store'});
-    if (!r.ok) throw new Error('No data');
-    const data = await r.json();
-    const totalPints = Object.values(data.totals || {}).reduce((a,b)=>a+b, 0);
+    const r = await fetch(`pints.json?t=${Date.now()}`, {cache: 'no-store'}); 
+    
+    if (r.ok){
+	const data = await r.json();
+    } else {
+	const data = {};
+    }
     const numDays = 1 + (Math.round(new Date.now() - new Date(2026,10,31)) / (1000 * 60 * 60 * 24));
-    document.getElementById('total-pints').textContent = `Total pints: ${totalPints}.`;
     document.getElementById('date-tracker').textContent = `Start date: 2026-10-31. Days elapsed: ${new Date.now()-new Date(2026,10,31)}`;
+    document.getElementById('total-pints').textContent = `Total pints: ${totalPints}.`;
     const table = document.querySelector('#totals tbody');
     table.innerHTML = '';
     const rows = Object.entries(data.totals || {}).sort((a,b)=>b[1]-a[1]);
@@ -201,8 +204,7 @@ async function load() {
     setupRace(data); // <-- add this line
 
   } catch (e) {
-    console.error("e");
-    document.getElementById('last-updated').textContent = 'No pints data yet.';
+    console.log(e)
   }
 }
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]))}

@@ -91,13 +91,15 @@ function computeTotals(messages){
   for (const [sender, count] of Object.entries(totals)) {
     log(`[COMPUTE]   ${sender}: ${count} images, hattricks: ${hatties[sender] || 0}, away goals: ${away_goals[sender] || 0}`);
   }
-  const pens = {"Joe Clarke": 10};
+  const pens = {};
   for (const[abuser, pen] of Object.entries(pens)){
   	totals[abuser] -= pen;
 	imageCount -= pen;
   }
-
-  return {events, totals, hatties, away_goals};
+  for (const name of Object.values(contactNameCache)){
+  	totals[name] = totals[name] || 0;
+  } 
+  return {events, totals, hatties, away_goals, };
 }
 
 function dedupeAndMerge(existingMessages, incoming){
@@ -231,7 +233,7 @@ async function fetchAllMessagesFromChat(chat){
    for (const senderId of senderIds) {
     try {
       const contact = await client.getContactById(senderId);
-      if (contact && contact.name) {
+      if (contact && contact.name && contact.name != chat.name) {
         contactNameCache[senderId] = contact.name;
         log(`[FETCH] Cached contact: ${senderId} -> ${contact.name}`);
         contactsResolved++;
@@ -329,7 +331,7 @@ client.on('message_create', async (message) => {
     } else {
       // ignore messages from other chats
     }
-  } catch(e){ logError('message handling error', e && e.stack || e); }
+  } catch(e){ logError(e,  e.stack || e); }
 });
 
 const app = express();
