@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T23:21:28.720Z",
+  "updated_at": "2026-10-31T23:21:39.046Z",
   "totals": {
     "Dominic Richards": 3,
     "Tom Swithenbank": 2,
@@ -98,7 +98,7 @@
       "ts": 1793488888,
       "sender": "Dominic Richards",
       "count": 1,
-      "message": "9",
+      "message": "10",
       "away_goal": false,
       "hattrick": false
     }
