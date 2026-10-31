@@ -1,14 +1,24 @@
 {
-  "updated_at": "2026-10-31T20:11:56.376Z",
+  "updated_at": "2026-10-31T20:12:03.283Z",
   "totals": {
+    "Joe Clarke": 1,
     "Dominic Richards": 0,
     "Harry Tilston": 0,
-    "Joe Clarke": 0,
     "Rob Barr": 0,
     "Jack Blewitt": 0,
     "Tom Swithenbank": 0
   },
-  "events": [],
+  "events": [
+    {
+      "id": "false_120363432007021079@g.us_3A198D48D7F4BAA1B2E5_48614768406724@lid",
+      "ts": 1793477522,
+      "sender": "Joe Clarke",
+      "count": 1,
+      "message": "",
+      "away_goal": false,
+      "hattrick": false
+    }
+  ],
   "hatties": {},
   "away_goals": {}
 }
