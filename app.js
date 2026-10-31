@@ -186,7 +186,7 @@ async function load() {
     } else {
 	const data = {};
     }
-    const numDays = 1 + (Math.round(new Date.now() - new Date(2026,10,31)) / (1000 * 60 * 60 * 24));
+    const numDays = 1 + (Math.round(Date.now() - new Date(2026,10,31)) / (1000 * 60 * 60 * 24));
     document.getElementById('date-tracker').textContent = `Start date: 2026-10-31. Days elapsed: ${new Date.now()-new Date(2026,10,31)}`;
     document.getElementById('total-pints').textContent = `Total pints: ${totalPints}.`;
     const table = document.querySelector('#totals tbody');
