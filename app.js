@@ -183,14 +183,16 @@ async function load() {
     if (!r.ok) throw new Error('No data');
     const data = await r.json();
     const totalPints = Object.values(data.totals || {}).reduce((a,b)=>a+b, 0);
-    document.getElementById('total-pints').textContent = `Total pints: ${totalPints}`;
+    const numDays = 1 + Math.round(new Date.now() - new Date(2026,10,31)) / (1000 * 60 * 60 * 24));
+    document.getElementById('total-pints').textContent = `Total pints: ${totalPints}.`;
+    document.getElementById('date-tracker').textContent = `Start date: 2026-10-31. Days elapsed: ${new Date.now()-new Date(2026,10,31)}`;
     const table = document.querySelector('#totals tbody');
     table.innerHTML = '';
     const rows = Object.entries(data.totals || {}).sort((a,b)=>b[1]-a[1]);
     for (const [name,count] of rows) {
       const tr = document.createElement('tr');
       console.log(name, count, data.hatties?.[name] || 0);
-      tr.innerHTML = `<td>${escapeHtml(name)}</td><td>${count}</td><td>${data.hatties?.[name] || 0}</td><td>${data.away_goals?.[name] || 0}</td>`;
+      tr.innerHTML = `<td>${escapeHtml(name)}</td><td>${count}</td><td>${data.hatties?.[name] || 0}</td><td>${Math.round(count*100 / numDays)/100}</td>`;
       console.log(tr.innerHTML);
       table.appendChild(tr);
     }

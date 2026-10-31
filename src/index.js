@@ -150,13 +150,11 @@ client.on('ready', async () => {
   lastQrDataUrl = null;
   lastQrString = null;
   // Optional auto-scan on ready if environment variable set
-  try {
     const auto = String(process.env.SCAN_PREFIX_ON_READY || '').toLowerCase();
     const scanSelf = String(process.env.SCAN_SELF || '').toLowerCase();
     log(`[CLIENT] Performing initial scan`);
-    const prefix = process.env.SCAN_PREFIX || '1500 PINTS';
+    const prefix = process.env.SCAN_PREFIX || '1500 PINTS SEASON 3');
     log(`[CLIENT] Auto-scan starting (prefix='${prefix}')`);
-    try {
       log(`[CLIENT] Fetching all chats...`);
       const chats = await client.getChats();
       log(`[CLIENT] Got ${chats.length} chats, filtering by prefix...`);
@@ -177,8 +175,6 @@ client.on('ready', async () => {
         await persistFullAndRecompute(msgs);
         log(`[CLIENT] ✓ Auto-scan completed for ${best.name || best.formattedTitle || best.id}`);
       }
-    } catch (e) { console.log(e); logError('Error during auto-scan', e && e.stack || e);  }
-  } catch (e) { logError('Error while processing auto-scan setting', e && e.stack || e); }
 });
 
 client.on('auth_failure', msg => { logError('Auth failure', msg); });
