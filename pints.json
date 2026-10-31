@@ -1,9 +1,10 @@
 {
-  "updated_at": "2026-10-31T22:17:36.618Z",
+  "updated_at": "2026-10-31T22:27:58.305Z",
   "totals": {
     "Dominic Richards": 1,
     "Tom Swithenbank": 1,
     "Ed Bruckshaw": 1,
+    "Matt Davidson": 1,
     "Harry Tilston": 0,
     "Joe Clarke": 0,
     "Rob Barr": 0,
@@ -35,6 +36,15 @@
       "sender": "Ed Bruckshaw",
       "count": 1,
       "message": "3",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3A40614F5B42E41C2D42_145693897449603@lid",
+      "ts": 1793485677,
+      "sender": "Matt Davidson",
+      "count": 1,
+      "message": "004",
       "away_goal": false,
       "hattrick": false
     }
