@@ -183,7 +183,7 @@ async function load() {
     if (!r.ok) throw new Error('No data');
     const data = await r.json();
     const totalPints = Object.values(data.totals || {}).reduce((a,b)=>a+b, 0);
-    const numDays = 1 + Math.round(new Date.now() - new Date(2026,10,31)) / (1000 * 60 * 60 * 24));
+    const numDays = 1 + (Math.round(new Date.now() - new Date(2026,10,31)) / (1000 * 60 * 60 * 24));
     document.getElementById('total-pints').textContent = `Total pints: ${totalPints}.`;
     document.getElementById('date-tracker').textContent = `Start date: 2026-10-31. Days elapsed: ${new Date.now()-new Date(2026,10,31)}`;
     const table = document.querySelector('#totals tbody');
