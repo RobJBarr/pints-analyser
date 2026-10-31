@@ -176,6 +176,16 @@ function setupRace(data) {
   draw();
   if (wasPlaying) play();
 }
+function treatAsUTC(date) {
+    var result = new Date(date);
+    result.setMinutes(0);
+    return result;
+}
+
+function daysBetween(startDate, endDate) {
+    var millisecondsPerDay = 24 * 60 * 60 * 1000;
+    return 1+((treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay);
+}
 
 async function load() {
   try {
@@ -186,7 +196,8 @@ async function load() {
     } else {
 	const data = {};
     }
-    const numDays = 1 + (Math.round(Date.now() - new Date(2026,10,31)) / (1000 * 60 * 60 * 24));
+    const totalPints = Object.values(data.totals || {}).reduce((a,b)=>a+b, 0);
+    const numDays = daysBetween(Date.now(),new Date(2026,10,31));
     document.getElementById('date-tracker').textContent = `Start date: 2026-10-31. Days elapsed: ${numDays}`;
     document.getElementById('total-pints').textContent = `Total pints: ${totalPints}.`;
     const table = document.querySelector('#totals tbody');
