@@ -1,9 +1,20 @@
 {
-  "updated_at": "2026-10-31T19:35:43.568Z",
+  "updated_at": "2026-10-31T19:36:20.398Z",
   "totals": {
+    "Rob Barr": 1,
     "Joe Clarke": null
   },
-  "events": [],
+  "events": [
+    {
+      "id": "true_120363432007021079@g.us_3AF72DA2F76963FA1C79_207520018784433@lid",
+      "ts": 1793475379,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "He’s got lots of experience with that tbf",
+      "away_goal": false,
+      "hattrick": false
+    }
+  ],
   "hatties": {},
   "away_goals": {}
 }
