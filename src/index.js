@@ -153,7 +153,7 @@ client.on('ready', async () => {
     const auto = String(process.env.SCAN_PREFIX_ON_READY || '').toLowerCase();
     const scanSelf = String(process.env.SCAN_SELF || '').toLowerCase();
     log(`[CLIENT] Performing initial scan`);
-    const prefix = process.env.SCAN_PREFIX || '1500 PINTS SEASON 3');
+    const prefix = process.env.SCAN_PREFIX || '1500 PINTS SEASON 3';
     log(`[CLIENT] Auto-scan starting (prefix='${prefix}')`);
       log(`[CLIENT] Fetching all chats...`);
       const chats = await client.getChats();
