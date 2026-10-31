@@ -81,10 +81,10 @@ function computeTotals(messages){
       totals[senderName] = (totals[senderName]||0) + 1;
     }
     if (event.away_goal) {
-      event.count += 1; // count the away goal bonus
-      imageCount++;
+      //   event.count += 1; // count the away goal bonus
+      // imageCount++;
       away_goals[senderName] = (away_goals[senderName]||0) + 1;
-      totals[senderName] = (totals[senderName]||0) + 1;
+      // totals[senderName] = (totals[senderName]||0) + 1;
     }
   }
   log(`[COMPUTE] Found ${imageCount} submissions from ${Object.keys(totals).length} senders, including ${Object.values(hatties).reduce((a,b)=>a+b, 0)} hattricks, and ${Object.values(away_goals).reduce((a,b)=>a+b, 0)} away goals`);
