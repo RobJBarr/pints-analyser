@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T21:07:02.135Z",
+  "updated_at": "2026-10-31T21:07:09.132Z",
   "totals": {
     "Dominic Richards": 1,
     "Harry Tilston": 0,
@@ -16,10 +16,12 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "Test",
-      "away_goal": false,
+      "away_goal": true,
       "hattrick": false
     }
   ],
   "hatties": {},
-  "away_goals": {}
+  "away_goals": {
+    "Dominic Richards": 1
+  }
 }
