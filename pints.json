@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-31T22:00:38.962Z",
+  "updated_at": "2026-10-31T22:02:37.175Z",
   "totals": {
     "Dominic Richards": 1,
+    "Tom Swithenbank": 1,
     "Harry Tilston": 0,
     "Joe Clarke": 0,
     "Rob Barr": 0,
     "Jack Blewitt": 0,
-    "Tom Swithenbank": 0,
     "Leo Seal": 0
   },
   "events": [
@@ -16,6 +16,15 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "1",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3A52772BE4646A0EEFD7_277850192113878@lid",
+      "ts": 1793484156,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "2",
       "away_goal": false,
       "hattrick": false
     }
