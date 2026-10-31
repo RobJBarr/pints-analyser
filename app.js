@@ -184,20 +184,21 @@ function treatAsUTC(date) {
 
 function daysBetween(startDate, endDate) {
     var millisecondsPerDay = 24 * 60 * 60 * 1000;
-    return 1+((treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay);
+    return 1+Math.round((treatAsUTC(endDate) - treatAsUTC(startDate)) / millisecondsPerDay);
 }
 
 async function load() {
-  try {
     const r = await fetch(`pints.json?t=${Date.now()}`, {cache: 'no-store'}); 
-    
+	var data = {}; 
     if (r.ok){
-	const data = await r.json();
+	data = await r.json();
     } else {
-	const data = {};
+	data = {};
     }
     const totalPints = Object.values(data.totals || {}).reduce((a,b)=>a+b, 0);
-    const numDays = daysBetween(Date.now(),new Date(2026,10,31));
+    today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const numDays = daysBetween(today,new Date(2026,9,31));
     document.getElementById('date-tracker').textContent = `Start date: 2026-10-31. Days elapsed: ${numDays}`;
     document.getElementById('total-pints').textContent = `Total pints: ${totalPints}.`;
     const table = document.querySelector('#totals tbody');
@@ -213,10 +214,6 @@ async function load() {
     document.getElementById('last-updated').textContent = 'Last updated: ' + (data.updated_at || 'unknown');
 
     setupRace(data); // <-- add this line
-
-  } catch (e) {
-    console.log(e)
-  }
 }
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]))}
 load();
