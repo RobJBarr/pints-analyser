@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-31T23:56:14.252Z",
+  "updated_at": "2026-10-31T23:56:16.455Z",
   "totals": {
     "Dominic Richards": 4,
     "Tom Swithenbank": 3,
     "Ed Bruckshaw": 1,
     "Matt Davidson": 2,
     "Jack Blewitt": 7,
-    "Harry Tilston": 0,
+    "Harry Tilston": 1,
     "Joe Clarke": 0,
     "Rob Barr": 0,
     "Leo Seal": 0
@@ -153,6 +153,15 @@
       "sender": "Dominic Richards",
       "count": 1,
       "message": "16",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3AAD1B0031004C8C5EEE_272116444340299@lid",
+      "ts": 1793490975,
+      "sender": "Harry Tilston",
+      "count": 1,
+      "message": "17",
       "away_goal": false,
       "hattrick": false
     }
