@@ -198,7 +198,7 @@ async function load() {
     const totalPints = Object.values(data.totals || {}).reduce((a,b)=>a+b, 0);
     today = new Date();
     today.setHours(0, 0, 0, 0);
-    const numDays = daysBetween(today,new Date(2026,9,31));
+    const numDays = daysBetween(new Date(2026,9,31),today);
     document.getElementById('date-tracker').textContent = `Start date: 2026-10-31. Days elapsed: ${numDays}`;
     document.getElementById('total-pints').textContent = `Total pints: ${totalPints}.`;
     const table = document.querySelector('#totals tbody');
