@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-11-04T21:03:00.420Z",
+  "updated_at": "2026-11-04T21:03:34.218Z",
   "totals": {
     "Dominic Richards": 4,
     "Tom Swithenbank": 4,
-    "Ed Bruckshaw": 3,
+    "Ed Bruckshaw": 4,
     "Matt Davidson": 2,
     "Jack Blewitt": 10,
     "Harry Tilston": 1,
@@ -261,7 +261,16 @@
       "ts": 1793826179,
       "sender": "Amie-Leigh Williams",
       "count": 1,
-      "message": "38",
+      "message": "29",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3A373A52BF49C0C4A471_214134301929616@lid",
+      "ts": 1793826213,
+      "sender": "Ed Bruckshaw",
+      "count": 1,
+      "message": "30",
       "away_goal": false,
       "hattrick": false
     }
