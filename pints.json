@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T19:32:21.930Z",
+  "updated_at": "2026-11-04T16:49:03.317Z",
   "totals": {
     "Dominic Richards": 4,
     "Tom Swithenbank": 4,
@@ -8,6 +8,7 @@
     "Jack Blewitt": 9,
     "Harry Tilston": 1,
     "Joe Clarke": 2,
+    "Amie-Leigh Williams": 1,
     "Rob Barr": 0,
     "Leo Seal": 0
   },
@@ -216,6 +217,15 @@
       "sender": "Ed Bruckshaw",
       "count": 1,
       "message": "24",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3AEDBB0C9B08A0BD665F_170059364331768@lid",
+      "ts": 1793810942,
+      "sender": "Amie-Leigh Williams",
+      "count": 1,
+      "message": "25",
       "away_goal": false,
       "hattrick": false
     }
