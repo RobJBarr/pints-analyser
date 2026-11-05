@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T21:05:48.710Z",
+  "updated_at": "2026-11-05T21:06:06.063Z",
   "totals": {
     "Dominic Richards": 4,
     "Tom Swithenbank": 8,
@@ -387,7 +387,7 @@
       "ts": 1793912719,
       "sender": "Jack Blewitt",
       "count": 2,
-      "message": "44",
+      "message": "45",
       "away_goal": false,
       "hattrick": true
     }
