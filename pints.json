@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-05T21:46:40.107Z",
+  "updated_at": "2026-11-05T21:59:44.194Z",
   "totals": {
     "Dominic Richards": 4,
     "Tom Swithenbank": 8,
     "Ed Bruckshaw": 6,
     "Matt Davidson": 2,
-    "Jack Blewitt": 17,
+    "Jack Blewitt": 18,
     "Harry Tilston": 1,
     "Joe Clarke": 4,
     "Amie-Leigh Williams": 4,
@@ -406,6 +406,15 @@
       "sender": "Rob Barr",
       "count": 1,
       "message": "Haters will say it’s AI",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3A8497F1FDEAFE6B8296_103942570696740@lid",
+      "ts": 1793915983,
+      "sender": "Jack Blewitt",
+      "count": 1,
+      "message": "47",
       "away_goal": false,
       "hattrick": false
     }
