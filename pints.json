@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T20:33:51.061Z",
+  "updated_at": "2026-11-06T20:35:11.643Z",
   "totals": {
     "Dominic Richards": 5,
     "Tom Swithenbank": 15,
@@ -10,7 +10,7 @@
     "Joe Clarke": 5,
     "Amie-Leigh Williams": 5,
     "Rob Barr": 1,
-    "Jack Waller": 1,
+    "Jack Waller": 2,
     "Leo Seal": 0
   },
   "events": [
@@ -524,6 +524,15 @@
       "sender": "Joe Clarke",
       "count": 1,
       "message": "61",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3AF4E531B0E3AC897A12_276789251305571@lid",
+      "ts": 1793997310,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "62",
       "away_goal": false,
       "hattrick": false
     }
