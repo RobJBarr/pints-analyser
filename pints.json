@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-06T21:35:02.680Z",
+  "updated_at": "2026-11-06T22:03:40.396Z",
   "totals": {
-    "Dominic Richards": 7,
+    "Dominic Richards": 8,
     "Tom Swithenbank": 17,
     "Ed Bruckshaw": 6,
     "Matt Davidson": 2,
@@ -587,6 +587,15 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "68",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3A454150AF8323F84D68_223462954123378@lid",
+      "ts": 1794002619,
+      "sender": "Dominic Richards",
+      "count": 1,
+      "message": "69 😈😈😈😈",
       "away_goal": false,
       "hattrick": false
     }
