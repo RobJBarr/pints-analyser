@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T17:52:27.871Z",
+  "updated_at": "2026-11-18T18:23:37.128Z",
   "totals": {
     "Dominic Richards": 24,
     "Tom Swithenbank": 62,
@@ -9,7 +9,7 @@
     "Harry Tilston": 3,
     "Joe Clarke": 20,
     "Amie-Leigh Williams": 13,
-    "Rob Barr": 3,
+    "Rob Barr": 4,
     "Jack Waller": 3,
     "Leo Seal": 3
   },
@@ -1523,6 +1523,15 @@
       "sender": "Rob Barr",
       "count": 1,
       "message": "180",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "true_120363432007021079@g.us_3A0F896D46026680259A_207520018784433@lid",
+      "ts": 1795026215,
+      "sender": "Rob Barr",
+      "count": 1,
+      "message": "181",
       "away_goal": false,
       "hattrick": false
     }
