@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T18:20:43.070Z",
+  "updated_at": "2026-11-19T19:24:21.024Z",
   "totals": {
     "Dominic Richards": 24,
     "Tom Swithenbank": 62,
@@ -10,7 +10,7 @@
     "Joe Clarke": 20,
     "Amie-Leigh Williams": 13,
     "Rob Barr": 4,
-    "Jack Waller": 7,
+    "Jack Waller": 8,
     "Leo Seal": 3
   },
   "events": [
@@ -1561,6 +1561,15 @@
       "message": "184",
       "away_goal": false,
       "hattrick": true
+    },
+    {
+      "id": "false_120363432007021079@g.us_3A0F065BC8094E778836_276789251305571@lid",
+      "ts": 1795116259,
+      "sender": "Jack Waller",
+      "count": 1,
+      "message": "",
+      "away_goal": false,
+      "hattrick": false
     }
   ],
   "hatties": {
