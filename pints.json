@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T19:25:27.417Z",
+  "updated_at": "2026-11-20T19:42:45.882Z",
   "totals": {
     "Dominic Richards": 24,
     "Tom Swithenbank": 68,
@@ -11,7 +11,7 @@
     "Amie-Leigh Williams": 13,
     "Rob Barr": 4,
     "Jack Waller": 8,
-    "Leo Seal": 3
+    "Leo Seal": 4
   },
   "events": [
     {
@@ -1613,6 +1613,15 @@
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "191",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3A07FB19FF07B13B8004_74844217557181@lid",
+      "ts": 1795203764,
+      "sender": "Leo Seal",
+      "count": 1,
+      "message": "192",
       "away_goal": false,
       "hattrick": false
     }
