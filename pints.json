@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-26T18:34:06.853Z",
+  "updated_at": "2026-11-26T18:50:35.947Z",
   "totals": {
     "Dominic Richards": 28,
-    "Tom Swithenbank": 84,
+    "Tom Swithenbank": 85,
     "Ed Bruckshaw": 29,
     "Matt Davidson": 8,
     "Jack Blewitt": 24,
@@ -2019,6 +2019,15 @@
       "sender": "Rob Barr",
       "count": 1,
       "message": "239",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3AADEA72578E959C5805_277850192113878@lid",
+      "ts": 1795719034,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "240",
       "away_goal": false,
       "hattrick": false
     }
