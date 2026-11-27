@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-11-27T16:30:09.247Z",
+  "updated_at": "2026-11-27T16:30:15.602Z",
   "totals": {
     "Dominic Richards": 28,
-    "Tom Swithenbank": 87,
+    "Tom Swithenbank": 88,
     "Ed Bruckshaw": 29,
     "Matt Davidson": 8,
     "Jack Blewitt": 28,
@@ -2124,6 +2124,15 @@
     {
       "id": "false_120363432007021079@g.us_3A2E4C91476A8B3B4097_277850192113878@lid",
       "ts": 1795797007,
+      "sender": "Tom Swithenbank",
+      "count": 1,
+      "message": "255",
+      "away_goal": false,
+      "hattrick": false
+    },
+    {
+      "id": "false_120363432007021079@g.us_3A79BE1DCC4F44728A11_277850192113878@lid",
+      "ts": 1795797014,
       "sender": "Tom Swithenbank",
       "count": 1,
       "message": "255",
